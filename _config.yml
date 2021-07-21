@@ -17,10 +17,10 @@ resume_title:                   "Ph.D. student majoring in Data Mining"
 resume_contact_email:           "jihyeparkk@dm.snu.ac.kr"
 
 # the next two items are used for schema itemprops in _layouts/resume.html
-resume_contact_telephone:       "000-0000"
-resume_contact_address:         "000"
+resume_contact_telephone:       ""
+resume_contact_address:         ""
 
-resume_header_contact_info:     "000"
+resume_header_contact_info:     ""
 display_header_contact_info:    "false"
 
 resume_header_intro: "<p>I am a Ph.D. student in Data Mining Laboratory at Seoul National University, under the supervision of Professor Sungzoon Cho. My research interests mainly incldue Text Mining and Time Series Data Analysis. You can reach me via e-mail (jihyeparkk@dm.snu.ac.kr).</p>"
