@@ -128,7 +128,7 @@
             InfoAnoGAN: An Interpretable Anomaly Detection Method Using InfoGAN based on Unsupervised Learning
           </h4>
           <p class="resume-item-copy">
-            Jihye Park</strong>, Sungzoon Cho*
+            <strong>Jihye Park</strong>, Sungzoon Cho*
             <br>Spring Conference of Korea Data Mining Society (KDMS), Seoul, Korea, 2019.
           </p>
         </div>
@@ -167,6 +167,33 @@
       <!-- end Publications -->
       {% endif %}
 
+      {% if site.resume_section_projects %}
+      <!-- begin Projects -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Projects</h2>
+        </header>
+
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
+          <!--딥러닝을 활용한 강건한 설비 이상 탐지 기법 연구 (1차년도)-->
+          <h3 class="resume-item-title" itemprop="name">
+            A study on robust facility anomaly detection techniques using deep learning
+          </h3>
+          <h4 class="resume-item-details" itemprop="description">Samsung Electronics  &bull; December 2020.12 - August 2021</h4>
+        </div>
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
+          <!--인공지능 기술을 통한 문서 분류 자동화 시스템 구축-->
+          <h3 class="resume-item-title" itemprop="name">
+            Development of Automatic Classification System for Documents using Artificial Intelligence Technology
+          </h3> 
+          <h4 class="resume-item-details" itemprop="description">Samsung Electronics  &bull; June 2019 - December 2019; September 2020 - March 2021</h4>
+        </div>
+
+      </section>
+      <!-- end Projects -->
+      {% endif %}      
             
       {% if site.resume_section_experience %}
       <!-- begin Experience -->
@@ -188,26 +215,6 @@
       <!-- end Experience -->
       {% endif %}
 
-
-      {% if site.resume_section_projects %}
-      <!-- begin Projects -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Projects</h2>
-        </header>
-
-        {% for project in site.data.projects %}
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-          <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
-          <p class="resume-item-copy">{{ project.description }}</p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Projects -->
-      {% endif %}
 
       {% if site.resume_section_skills %}
       <!-- begin Skills -->
