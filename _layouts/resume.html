@@ -147,7 +147,7 @@
           <p class="resume-item-copy">
             <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
             <br>Decision Support Systems, submitted.
-            <br><a href="https://github.com/sophia-jihye/Senti-DD" target="_blank">Code</a>
+            <br>[<a href="https://github.com/sophia-jihye/Senti-DD" target="_blank">Code</a>]
           </p>
         </div>
 
@@ -188,7 +188,7 @@
           <p class="resume-item-copy">
             Seokgi Kim†, <strong>Jihye Park†</strong>, Kihong Seong†, Namwoo Cho†, Junho Min†, Hwajung Hong*
             <br>arXiv preprint arXiv:2102.13350, 2021.
-            <br><a href="https://techxplore.com/news/2021-03-music-circles-interactive-visualization-tool.html" target="_blank">News Article</a> <a href="https://arxiv.org/abs/2102.13350" target="_blank">Paper</a> <a href="https://sophia-jihye.github.io/files/MusicVis/discover.html" target="_blank">Demo</a> <a href="https://youtu.be/OrB0qQz_A2c" target="_blank">Video</a> <a href="https://github.com/chonamwoo/snuDxd" target="_blank">Code</a>
+            <br>[<a href="https://techxplore.com/news/2021-03-music-circles-interactive-visualization-tool.html" target="_blank">News Article</a>] [<a href="https://arxiv.org/abs/2102.13350" target="_blank">Paper</a>] [<a href="https://sophia-jihye.github.io/files/MusicVis/discover.html" target="_blank">Demo</a>] [<a href="https://youtu.be/OrB0qQz_A2c" target="_blank">Video</a>] [<a href="https://github.com/chonamwoo/snuDxd" target="_blank">Code</a>]
           </p>
         </div>
         
@@ -244,84 +244,28 @@
       </section>
       <!-- end Projects -->
       {% endif %}      
-            
-      {% if site.resume_section_skills %}
-      <!-- begin Skills -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Skills</h2>
-        </header>
-        {% for skill in site.data.skills %}
-        <div class="resume-item">
-          <h4 class="resume-item-details">{{ skill.skill }}</h4>
-          <p class="resume-item-copy">{{ skill.description }}</p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Skills -->
-      {% endif %}
-
-      {% if site.resume_section_recognition %}
-      <!-- begin Recognition -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Recognition</h2>
-        </header>
-
-        {% for recognition in site.data.recognitions %}
-        <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">{{ recognition.award }}</h3>
-          <h4 class="resume-item-details">{{ recognition.organization }} &bull; {{ recognition.year }}</h4>
-          <p class="resume-item-copy">{{ recognition.summary }}</p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Recognition -->
-      {% endif %}
-
+      
       {% if site.resume_section_interests %}
       <!-- begin Interests -->
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Outside Interests</h2>
+          <h2>A Little More About Me</h2>
         </header>
 
         <div class="resume-item">
+          <p class="resume-item-copy">
+            In my spare time, I enjoy ~
+          </p>
           <ul class="resume-item-list">
-            {% for interest in site.data.interests %}
-            <li>{{ interest.description }}</li>
-            {% endfor %}
+            <li><a href="https://fire-airedale-340.notion.site/1a4c90cf90cc44038b2a8c1e2978bd66?v=b80421962fd7479f9c56fff3fe4c8bc3" target="_blank">Classical Music Log</a></li>
           </ul>
         </div>
 
       </section>
       <!-- end Interests -->
       {% endif %}
-
-      {% if site.resume_section_links %}
-      <!-- begin Links -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Additional Links</h2>
-        </header>
-
-        <div class="resume-item">
-          <ul class="resume-item-list">
-            {% for link in site.data.links %}
-            <li><a href={{ link.url }} itemprop="url">{{ link.description }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-
-      </section>
-      <!-- end Links -->
-      {% endif %}
+      
 
       {% if site.resume_print_social_links %}
       <!-- begin Print Social Links -->
