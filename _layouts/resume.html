@@ -72,15 +72,46 @@
           <h4 class="resume-item-details group" itemprop="description">Bachelor of Business Administration &bull; March 2012 - February 2016</h4>
           <p class="resume-item-copy" itemprop="description">
             <ul class="resume-item-list">
-              {% for award in education.awards %}
-              <li>{{ award.award }}</li>
-              {% endfor %}
+              <li>Internship at Linewalks (2014): Organized and suggested ideas for a new service and strategy on utilizing big data of <a href="https://www.hira.or.kr/main.do" target="_blank">HIRA</a> and designed <a href="https://drive.google.com/drive/folders/1BOsSjpYzhPfduMuVJA9qEYUHcPvbK_n7?usp=sharing" target="_blank">marketing promotion materials</a>.</li>
             </ul>
-          <p class="resume-item-copy">Interested in Management Information System (MIS)</p>
+          <p class="resume-item-copy">Interested in Management Information System (MIS).</p>
         </div>
         
       </section>
       <!-- end Education -->
+      {% endif %}
+
+      {% if site.resume_section_experience %}
+      <!-- begin Experience -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Experience</h2>
+        </header>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title underline" itemprop="name">Work Experience</h3>
+          <h4 class="resume-item-details" itemprop="description">Bankware Global, Software Developer &bull; July 2016 - June 2018</h4>
+          <h5 class="resume-item-details award-title" itemprop="description">Java, Linux, Oracle</h5>
+          <p class="resume-item-copy" itemprop="description">
+            <ul class="resume-item-list">
+              <li>Fixed software bugs related to thread that calculates java byte code coverage data and other statistical information.</li>
+              <li>Developed backend process of applying and assessing applications of the OK Bae-Jung Foundation scholarship.</li>
+            </ul>
+          <p class="resume-item-copy">Worked as a backend software developer.</p>
+        </div>
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h4 class="resume-item-details" itemprop="description">Hankook Research, Marketing Researcher &bull; January 2016 - May 2016</h4>
+          <h5 class="resume-item-details award-title" itemprop="description">User-Generated Data Analysis</h5>
+          <p class="resume-item-copy" itemprop="description">
+            <ul class="resume-item-list">
+              <li>Conducted group surveys and home visiting interviews in Los Angeles, United States, to create a report on built-in home appliances.</li>
+            </ul>
+          <p class="resume-item-copy">Analyzed data mainly obtained from questionnaires.</p>
+        </div>
+        
+      </section>
+      <!-- end Experience -->
       {% endif %}
       
       {% if site.resume_section_publications %}
@@ -197,27 +228,6 @@
       <!-- end Projects -->
       {% endif %}      
             
-      {% if site.resume_section_experience %}
-      <!-- begin Experience -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Experience</h2>
-        </header>
-
-        {% for job in site.data.experience %}
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
-          <p class="resume-item-copy">{{ job.summary }}</p>
-        </div><!-- end of resume-item -->
-        {% endfor %}
-
-      </section>
-      <!-- end Experience -->
-      {% endif %}
-
-
       {% if site.resume_section_skills %}
       <!-- begin Skills -->
       <section class="content-section">
