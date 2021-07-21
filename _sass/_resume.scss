@@ -3,6 +3,10 @@
 
 // util
 
+.underline {
+  text-decoration : underline;
+}
+
 .section-header {
   @include section_border;
   margin-bottom: 1.5rem;
