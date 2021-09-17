@@ -251,33 +251,17 @@
           <h2>Projects</h2>
         </header>
 
+        {% for project in site.data.projects %}
         <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
           <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-          <h4 class="resume-item-details" itemprop="description">Text mining based hot topic detection from social media data</h4>
-          <h4 class="resume-item-details" itemprop="description">(소셜미디어 텍스트 분석을 통한 투자 관련 핫토픽 탐지)</h4>
+          <h4 class="resume-item-details" itemprop="description">{{ project.eng_name }}</h4>
+          <h4 class="resume-item-details" itemprop="description">({{ project.kor_name }})</h4>
           <p class="resume-item-copy">
-            NH Investment & Securities
-            <br>August 2021 - November 2021; Acting as a Project Manager (PM).
+            {{ project.client }}
+            <br>{{ project.duration_and_role }}
           </p>
         </div>
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-          <h4 class="resume-item-details" itemprop="description">A Study on deep learning based robust techniques for equipment anomaly detection</h4>
-          <h4 class="resume-item-details" itemprop="description">(딥러닝을 활용한 강건한 설비 이상 탐지 기법 연구)</h4>
-          <p class="resume-item-copy">
-            Samsung Electronics
-            <br>December 2020 - August 2021
-          </p>
-        </div>
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-          <h4 class="resume-item-details" itemprop="description">Development of automatic classification system for documents using artificial intelligence technology</h4>
-          <h4 class="resume-item-details" itemprop="description">(인공지능 기술을 통한 문서 분류 자동화 시스템 구축)</h4>
-          <p class="resume-item-copy">
-            Samsung Electronics
-            <br>June 2019 - December 2019; September 2020 - March 2021
-          </p>
-        </div>
+        {% endfor %}
 
       </section>
       <!-- end Projects -->
