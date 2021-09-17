@@ -171,6 +171,7 @@
             {{ item.authors }}
             <br>{{ item.host }}
           </p>
+          {% if item.info %}{{ item.info }}{% endif %}
         </div>
         {% endfor %}
     
