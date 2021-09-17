@@ -161,34 +161,18 @@
           </p>
         </div>
 
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title underline" itemprop="name">Conferences</h3>
-          <h4 class="resume-item-details" itemprop="description">
-            Automatic Keyword Extraction and NER-Normalization Based Knowledge Network Construction for Patent Summarization
-          </h4>
-          <p class="resume-item-copy">
-            Hye Jin Lee, Sung Whan Jeon, <strong>Jihye Park</strong>, Sungzoon Cho*
-            <br>Spring Conference of Korean Institute of Industrial Engineers (KIIE), Jeju, Korea, 2021.
-          </p>
-        </div>
+        <h3 class="resume-item-title underline" itemprop="name">Conferences</h3>
+        {% for item in site.data.conferences %}
         <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
           <h4 class="resume-item-details" itemprop="description">
-            A frequency-and-ranking based approach for new event detection using non-contiguous bigrams from text data of central bankers’ speeches
+            {{ item.title }}
           </h4>
           <p class="resume-item-copy">
-            <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
-            <br>Fall Conference of Korea Data Mining Society (KDMS), Seoul, Korea, 2019.
+            {{ item.authors }}
+            <br>{{ item.host }}
           </p>
         </div>
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h4 class="resume-item-details" itemprop="description">
-            InfoAnoGAN: An Interpretable Anomaly Detection Method Using InfoGAN based on Unsupervised Learning
-          </h4>
-          <p class="resume-item-copy">
-            <strong>Jihye Park</strong>, Sungzoon Cho*
-            <br>Spring Conference of Korea Data Mining Society (KDMS), Seoul, Korea, 2019.
-          </p>
-        </div>
+        {% endfor %}
     
         <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
           <h3 class="resume-item-title underline" itemprop="name">arXiv</h3>
