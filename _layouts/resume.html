@@ -149,17 +149,19 @@
           (*: Corresponding author; †: Equal contribution)
         </header>
 
+        <h3 class="resume-item-title underline" itemprop="name">Journals</h3>
+        {% for item in site.data.journals %}
         <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title underline" itemprop="name">Journals</h3>
           <h4 class="resume-item-details" itemprop="description">
-            Automatic Construction of a Context-Aware Sentiment Lexicon in the Financial Domain Using Direction-Dependent Words
+            {{ item.title }}
           </h4>
           <p class="resume-item-copy">
-            <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
-            <br>Decision Support Systems, submitted.
-            <br>[<a href="https://github.com/sophia-jihye/Senti-DD" target="_blank">Code</a>]
+            {{ item.authors }}
+            <br>{{ item.journal_and_status }}
+            {% if item.info %}<br>{{ item.info }}{% endif %}
           </p>
         </div>
+        {% endfor %}
 
         <h3 class="resume-item-title underline" itemprop="name">Conferences</h3>
         {% for item in site.data.conferences %}
@@ -187,43 +189,18 @@
           </p>
         </div>
         
+        <h3 class="resume-item-title underline" itemprop="name">In Preparation</h3>
+        {% for item in site.data.preparation %}
         <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title underline" itemprop="name">In Preparation</h3>
           <h4 class="resume-item-details" itemprop="description">
-            Stock market prediction using microblogging data from influential users
+            {{ item.title }}
           </h4>
           <p class="resume-item-copy">
-            <strong>Jihye Park</strong>, Yongjae Yoo, Jaekwan Ahn, Sungzoon Cho*
+            {{ item.authors }}
           </p>
+          {% if item.info %}{{ item.info }}{% endif %}
         </div>
-        
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h4 class="resume-item-details" itemprop="description">
-            Identification of spurious correlations for constructing domain-specific sentiment lexicon
-          </h4>
-          <p class="resume-item-copy">
-            <strong>Jihye Park</strong>, Sungzoon Cho*
-          </p>
-        </div>
-        
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h4 class="resume-item-details" itemprop="description">
-            Hot Topic Detection in Central Bankers' Speeches for Text Mining Based Early Warning System
-          </h4>
-          <p class="resume-item-copy">
-            <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
-          </p>
-        </div>
-        
-        <!--        
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h4 class="resume-item-details" itemprop="description">
-            K-MLM: Target domain keyword-masking based post-training method for BERT in cross-domain sentiment classification
-          </h4>
-          <p class="resume-item-copy">
-            <strong>Jihye Park</strong>, Sungzoon Cho*
-          </p>
-        </div>-->
+        {% endfor %}
     
       </section>
       <!-- end Publications -->
