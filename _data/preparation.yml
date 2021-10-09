@@ -3,11 +3,14 @@
 - title: Hot Topic Detection in Central Bankers' Speeches for Text Mining Based Early Warning Systems
   authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
   
-- title: Stock price movement prediction using influential users' opinions in social media
+- title: Stock price movement prediction by discovering high-quality opinions in social media
   authors: <strong>Jihye Park</strong>, Yongjae Yoo, Jaekwan Ahn, Sungzoon Cho*
-  
-- title: Identification of spurious correlations for constructing domain-specific sentiment lexicon
+
+- title: Exploiting BERT for sentiment analysis on financial microblogs
   authors: <strong>Jihye Park</strong>, Sungzoon Cho*
+  
+#- title: Identification of spurious correlations for constructing domain-specific sentiment lexicon
+#  authors: <strong>Jihye Park</strong>, Sungzoon Cho*
   
 #- title: K-MLM&colon; Target domain keyword-masking based post-training method for BERT in cross-domain sentiment classification
 #  authors: <strong>Jihye Park</strong>, Sungzoon Cho*
