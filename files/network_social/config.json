@@ -8,7 +8,7 @@
     "text": "Jihye Park"
   },
   "text": {
-    "more": "Minimum number of occurrences for nodes \u003d 50;\nMinimum number of co-occurrences between nodes \u003d 30;\nNumber of nodes \u003d 6,436;\nNumber of edges \u003d 235,271;\nHierarchy: Modularity Class \u003e Degree \u003e Type;\nAverage degree \u003d 53.699;\nModularity \u003d 0.074",
+    "more": "Minimum number of occurrences for nodes \u003d 50;\nMinimum number of co-occurrences between nodes \u003d 30;\nNumber of nodes \u003d 6,436;\nNumber of edges \u003d 235,271;\nHierarchy: Modularity Class \u003e Degree \u003e Type;\nAverage degree \u003d 53.699;\nModularity \u003d 0.074;\nNumber of communities \u003d 128",
     "intro": "MIT License",
     "title": "연관어 및 연관 종목 탐색을 위한 네트워크"
   },
