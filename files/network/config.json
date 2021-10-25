@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "file": "",
+    "link": "",
+    "text": "Jihye Park"
+  },
+  "text": {
+    "more": "Minimum number of occurrences for nodes \u003d 50;\nMinimum number of co-occurrences between nodes \u003d 30;\nNumber of nodes \u003d 6,461;\nNumber of edges \u003d 235,496;\nAverage Degree \u003d 72.898;\n\nDensity: 0.011\nModularity: 0.096\nModularity with resolution: 0.031\nNumber of Communities: 104\nHierarchy: Modularity Class \u003e Degree \u003e Type",
+    "intro": "MIT License",
+    "title": "연관어 및 연관 종목 탐색을 위한 co-occurrence network"
+  },
+  "legend": {
+    "edgeLabel": "동시출현",
+    "colorLabel": "티커 여부",
+    "nodeLabel": "키워드"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "type",
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": false,
+    "imageAttribute": false
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 1,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
+      "minNodeSize": 1,
+      "maxNodeSize": 7
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}
