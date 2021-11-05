@@ -126,19 +126,17 @@
           <p class="resume-item-copy">Presented lectures on python programming and machine learning for government-invited Malaysian students.</p>
         </div>  
         
+        <h3 class="resume-item-title underline" itemprop="name">Invited Talks</h3>
+        {% for item in site.data.talks %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title underline" itemprop="name">Invited Talks</h3>
-          <h4 class="resume-item-details" itemprop="description">Hot Topic Detection in Central Bankers' Speeches and Social Media</h4>
-          <p class="resume-item-copy">at College of Business Administration, Seoul National University on November 2021</p>      
+          <h4 class="resume-item-details" itemprop="description">
+            {{ item.title }}
+          </h4>
+          <p class="resume-item-copy">
+            {{ item.description }}           
+          </p>
         </div>
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h4 class="resume-item-details" itemprop="description">Detection of word-changes in FOMC statements</h4>
-          <p class="resume-item-copy">at <a href="http://vaiv.kr/promote/prcenterPressrelease?posts_id=2679" target="_blank">Vive</a> on August 2021</p>
-        </div>      
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h4 class="resume-item-details" itemprop="description">Hot Topic Detection in Central Bankers' Speeches for Text Mining Based Early Warning Systems</h4>
-          <p class="resume-item-copy">at Korea Investment Corporation on October 2020</p>
-        </div>        
+        {% endfor %}     
         
       </section>
       <!-- end Experience -->
