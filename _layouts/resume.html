@@ -38,7 +38,7 @@
         <div class="executive-summary" itemprop="description">
           <p>
             I am a Ph.D. candidate in Data Mining Laboratory at Seoul National University, under the supervision of Professor Sungzoon Cho. 
-            My research interests mainly incldue Text Mining and Time Series Data Analysis. 
+            My research interests mainly incldue Text Mining and Time Series Analysis. 
             You can reach me via e-mail (<a href="mailto:jihyeparkk@dm.snu.ac.kr">jihyeparkk@dm.snu.ac.kr</a>).
           </p>
         </div>
@@ -67,7 +67,7 @@
           <p class="resume-item-copy" itemprop="description">
             <ul class="resume-item-list">
               <li>Advisor: Professor Sungzoon Cho</li>
-              <li>Research Interests: Text Mining, Time Series Data Analysis</li>
+              <li>Research Interests: Text Mining, Time Series Analysis</li>
             </ul>
         </div>
         
@@ -114,17 +114,20 @@
             </ul>
         </div>
         
+        <h3 class="resume-item-title underline" itemprop="name">Teaching</h3>
+        {% for item in site.data.talks %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title underline" itemprop="name">Teaching</h3>
-          <h4 class="resume-item-details" itemprop="description">Teaching Assistant, SNU Data Mining Camp</h4>
-          <h5 class="resume-item-details award-title" itemprop="description">February 2019 &ndash; Present</h5>
-          <p class="resume-item-copy">Assisted lectures on introduction to data mining for high school students.</p>
+          <h4 class="resume-item-details" itemprop="description">
+            {{ item.title }}
+          </h4>
+          <h5 class="resume-item-details award-title" itemprop="description">
+            {{ item.period }}
+          </h5>
+          <p class="resume-item-copy">
+            {{ item.description }}           
+          </p>
         </div>
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h4 class="resume-item-details" itemprop="description">Instructor, SNU Language Education Institute</h4>
-          <h5 class="resume-item-details award-title" itemprop="description">November 2019 &ndash; February 2021</h5>
-          <p class="resume-item-copy">Presented lectures on python programming and machine learning for government-invited Malaysian students.</p>
-        </div>  
+        {% endfor %}  
         
         <h3 class="resume-item-title underline" itemprop="name">Invited Talks</h3>
         {% for item in site.data.talks %}
