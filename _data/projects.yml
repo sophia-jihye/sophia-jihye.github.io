@@ -5,10 +5,10 @@
   client: National Research Foundation of Korea
   duration_and_role: September 2021 &ndash; Present
   
-- eng_name: Text mining based hot topic detection from social media data
-  kor_name: 소셜미디어 텍스트 분석을 통한 투자 관련 핫토픽 탐지
-  client: NH Investment & Securities
-  duration_and_role: August 2021 &ndash; November 2021; Acting as a Project Manager (PM).
+#- eng_name: Text mining based hot topic detection from social media data
+#  kor_name: 소셜미디어 텍스트 분석을 통한 투자 관련 핫토픽 탐지
+#  client: NH Investment & Securities
+#  duration_and_role: August 2021 &ndash; November 2021; Acting as a Project Manager (PM).
 
 - eng_name: A Study on deep learning based robust techniques for equipment anomaly detection
   kor_name: 딥러닝을 활용한 강건한 설비 이상 탐지 기법 연구
