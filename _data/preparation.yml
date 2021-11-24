@@ -3,14 +3,11 @@
 - title: Hot Topic Detection in the Central Bankers' Speeches for Text-Mining-Based Early Warning Systems
   authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
   
-- title: Data Augmentation for Cross-Domain Sentiment Analysis
+- title: BERT post-training for cross-domain sentiment analysis
   authors: <strong>Jihye Park</strong>, Sungzoon Cho*
 
 #- title: Exploiting BERT for sentiment analysis on financial microblogs
 #  authors: <strong>Jihye Park</strong>, Sungzoon Cho*
   
 #- title: Identification of spurious correlations for constructing domain-specific sentiment lexicon
-#  authors: <strong>Jihye Park</strong>, Sungzoon Cho*
-  
-#- title: K-MLM&colon; Target domain keyword-masking based post-training method for BERT in cross-domain sentiment classification
 #  authors: <strong>Jihye Park</strong>, Sungzoon Cho*
