@@ -6,7 +6,7 @@
 - title: Building semiconductor named entity knowledge graph from patent documents using named entity normalization model
   authors: Sung Hwan Jeon, Hye Jin Lee, <strong>Jihye Park</strong>, Sungzoon Cho*
 
-- title: BERT post-training for cross-domain sentiment analysis
+- title: Data selection strategy for BERT post-training on cross-domain sentiment analysis
   authors: <strong>Jihye Park</strong>, Sungzoon Cho*
 
 #- title: Exploiting BERT for sentiment analysis on financial microblogs
