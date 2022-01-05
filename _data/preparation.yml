@@ -1,17 +1,14 @@
 # In Preparation
 
-- title: Hot Topic Detection in the Central Bankers' Speeches
+- title: Automatic Construction of a Context-Aware Sentiment Lexicon in the Financial Domain Using Direction-Dependent Words
   authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
 
 - title: Building semiconductor-related patent knowledge graph by using named entity recognition and normalization models
   authors: Sung Hwan Jeon, Hye Jin Lee, <strong>Jihye Park</strong>, Sungzoon Cho*
 
-- title: Data selection strategy for BERT post-training on cross-domain sentiment analysis
-  authors: <strong>Jihye Park</strong>, Sungzoon Cho*
+#- title: Data selection strategy for BERT post-training on cross-domain sentiment analysis
+#  authors: <strong>Jihye Park</strong>, Sungzoon Cho*
 
-- title: Automatic Construction of a Context-Aware Sentiment Lexicon in the Financial Domain Using Direction-Dependent Words
-  authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
-  
 #- title: Exploiting BERT for sentiment analysis on financial microblogs
 #  authors: <strong>Jihye Park</strong>, Sungzoon Cho*
   
