@@ -1,5 +1,11 @@
 # In Preparation
 
+- title: Spam tweet classification using financial domain-specific knowledge-enhanced language model (가제)
+- authors: <strong>Jihye Park</strong>, Hyunjong Kim, Suyeon Lee, Sungzoon Cho*
+
+- title: Pseudo labeling using UMAP-assisted HDBSCAN clustering for anomaly detection (가제)
+- authors: <strong>Jihye Park</strong>, Jinwoo Choi, Yongjae Yoo, Sungzoon Cho*
+
 #- title: Twitter-based word embedding framework for leveraging the wisdom of crowds in the stock market
 
 #- title: Graph Neural Network-Based Anomaly Detection in Multivariate Time Series in Semiconductor Manufacturing
@@ -9,10 +15,7 @@
 #- title: detection of social bots in stock microblogs on twitter
 
 #- title: Data selection strategy for BERT post-training on cross-domain sentiment analysis
-#  authors: <strong>Jihye Park</strong>, Sungzoon Cho*
 
 #- title: Exploiting BERT for sentiment analysis on financial microblogs
-#  authors: <strong>Jihye Park</strong>, Sungzoon Cho*
   
 #- title: Identification of spurious correlations for constructing domain-specific sentiment lexicon
-#  authors: <strong>Jihye Park</strong>, Sungzoon Cho*
