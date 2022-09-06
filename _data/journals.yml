@@ -10,6 +10,6 @@
   journal_and_status: <i>Under Review</i> for the submission to the <i>Expert Systems with Applications</i>.
   code_url: https://github.com/sophia-jihye/Senti-DD
 
-- title: Building knowledge graphs from technical documents using named entity recognition and normalization models
-  authors: Sung Hwan Jeon, Hye Jin Lee, <strong>Jihye Park</strong>, Sungzoon Cho*
-  journal_and_status: <i>Submitted</i> to the <i>Computers & Industrial Engineering</i>.
+# - title: Building knowledge graphs from technical documents using named entity recognition and normalization models
+#   authors: Sung Hwan Jeon, Hye Jin Lee, <strong>Jihye Park</strong>, Sungzoon Cho*
+#   journal_and_status: <i>Submitted</i> to the <i>Computers & Industrial Engineering</i>.
