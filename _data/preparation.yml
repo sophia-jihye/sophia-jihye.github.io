@@ -1,14 +1,7 @@
 # In Preparation
 
-- title: Spam Filtering Using Company Knowledge-Enhanced BERT
-  authors: <strong>Jihye Park</strong>, Sungzoon Cho*
-  
-- title: Automatic Construction of Financial Domain-Specific Knowledge-Aware Sentiment Lexicon Using Direction-Dependent Words
-  authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
-  #code_url: https://github.com/sophia-jihye/Senti-DD  
-  
-- title: Research for automating FOMC statements analysis
-  authors: <a href="https://jihyeparkk.notion.site/709621ee249d4af8b06bf560156ec237?v=ab200ab6ece940bd8a04554c7b513b15" target="_blank">Study Note</a>
+- title: Extraction of Subjects in FOMC Statements
+  authors: <a href="https://github.com/sophia-jihye/fomc_statements" target="_blank">Study Note</a>
 
 #- title: Twitter-based word embedding framework for leveraging the wisdom of crowds in the stock market
 
