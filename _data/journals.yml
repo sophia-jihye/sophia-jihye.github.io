@@ -2,9 +2,19 @@
 
 - title: Hot Topic Detection in Central Bankers' Speeches
   authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
-  journal_and_status: <i>Under Review</i> for 2nd round revision to the <i>Expert Systems with Applications</i>.
+  journal_and_status: <i>Under Review</i> for 2nd round revision to <i>Expert Systems with Applications</i>.
   code_url: https://github.com/sophia-jihye/hot_topic_detection_in_central_bankers_speeches
+  
+- title: Automatic Construction of Financial Ontology-aware Sentiment Lexicon Using Direction-dependent Words
+  authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
+  journal_and_status: <i>Submitted</i> to <i>Journal of the Association for Information Science and Technology</i>.
+  code_url: https://github.com/sophia-jihye/Senti-DD  
 
+- title: Incorporation of Company-related Factual Knowledge into Pretrained Language Models for Stock-related Spam Tweet Filtering
+  authors: <strong>Jihye Park</strong>, Sungzoon Cho*
+  journal_and_status: <i>Submitted</i> to <i>Expert Systems with Applications</i>.
+  code_url: https://github.com/sophia-jihye/Incorporation_of_Company-related_Factual_Knowledge_into_Pretrained_Language_Models  
+  
 # - title: Building knowledge graphs from technical documents using named entity recognition and normalization models
 #   authors: Sung Hwan Jeon, Hye Jin Lee, <strong>Jihye Park</strong>, Sungzoon Cho*
 #   journal_and_status: <i>Submitted</i> to the <i>Computers & Industrial Engineering</i>.
