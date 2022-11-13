@@ -96,16 +96,14 @@
       <!-- end Education -->
       {% endif %}
 
-      {% if site.resume_section_experience %}
-      <!-- begin Experience -->
+      <!-- begin Work Experience -->
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Experience</h2>
+          <h2>Work Experience</h2>
         </header>
 
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title underline" itemprop="name">Work Experience</h3>
           <h4 class="resume-item-details" itemprop="description">Software Developer, Bankware Global</h4>
           <h5 class="resume-item-details award-title" itemprop="description">July 2016 &ndash; June 2018</h5>
           <p class="resume-item-copy">Worked as a backend software developer using Java, Linux, and Oracle.</p>
@@ -124,37 +122,8 @@
               <li>Conducted group surveys and home visiting interviews in the Los Angeles, United States, to create a report on built-in home appliances.</li>
             </ul>
         </div>
-        
-        <h3 class="resume-item-title underline" itemprop="name">Teaching</h3>
-        {% for item in site.data.teaching %}
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h4 class="resume-item-details" itemprop="description">
-            {{ item.title }}
-          </h4>
-          <h5 class="resume-item-details award-title" itemprop="description">
-            {{ item.period }}
-          </h5>
-          <p class="resume-item-copy">
-            {{ item.description }}           
-          </p>
-        </div>
-        {% endfor %}  
-        
-        <h3 class="resume-item-title underline" itemprop="name">Invited Talks</h3>
-        {% for item in site.data.talks %}
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h4 class="resume-item-details" itemprop="description">
-            {{ item.title }}
-          </h4>
-          <p class="resume-item-copy">
-            {{ item.description }}           
-          </p>
-        </div>
-        {% endfor %}     
-        
       </section>
-      <!-- end Experience -->
-      {% endif %}
+      <!-- end Work Experience -->
       
       {% if site.resume_section_publications %}
       <!-- begin Publications -->
@@ -229,7 +198,52 @@
 
       </section>
       <!-- end Projects -->
-      {% endif %}      
+      {% endif %}     
+      
+      <!-- begin Teaching -->
+      <section class="content-section">
+        
+        <header class="section-header">
+          <h2>Teaching</h2>
+        </header>
+        
+        {% for item in site.data.teaching %}
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h4 class="resume-item-details" itemprop="description">
+            {{ item.title }}
+          </h4>
+          <h5 class="resume-item-details award-title" itemprop="description">
+            {{ item.period }}
+          </h5>
+          <p class="resume-item-copy">
+            {{ item.description }}           
+          </p>
+        </div>
+        {% endfor %}  
+
+      </section>
+      <!-- end Teaching -->
+
+      <!-- begin Talks -->
+      <section class="content-section">
+        
+        <header class="section-header">
+          <h2>Invited Talks</h2>
+        </header>
+      
+        {% for item in site.data.talks %}
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h4 class="resume-item-details" itemprop="description">
+            {{ item.title }}
+          </h4>
+          <p class="resume-item-copy">
+            {{ item.description }}           
+          </p>
+        </div>
+        {% endfor %}     
+        
+      </section>
+      <!-- end Talks -->
       
       {% if site.resume_section_interests %}
       <!-- begin Interests -->
