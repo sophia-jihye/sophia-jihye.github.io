@@ -10,7 +10,7 @@ sass:
 
 # Resume settings
 resume_avatar:                  "true"
-resume_name:                    "Jihye Park"
+resume_name:                    "Jihye <a href="http://ipa-reader.xyz/?text=%CA%A4ihe" target="_blank">(ʤihe)</a> Park"
 resume_title:                   "Ph.D. candidate at SNU DM"
 
 # used for the contact button in _layouts/resume.html
