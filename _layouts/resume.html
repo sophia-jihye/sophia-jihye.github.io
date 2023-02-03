@@ -201,14 +201,14 @@
       <!-- end Projects -->
       {% endif %}     
       
-      <!-- begin Teaching -->
+      <!-- begin Official Teaching -->
       <section class="content-section">
         
         <header class="section-header">
-          <h2>Teaching</h2>
+          <h2>(Official) Teaching</h2>
         </header>
         
-        {% for item in site.data.teaching %}
+        {% for item in site.data.teaching_official %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h4 class="resume-item-details" itemprop="description">
             {{ item.title }}
@@ -223,7 +223,31 @@
         {% endfor %}  
 
       </section>
-      <!-- end Teaching -->
+      <!-- end Official Teaching -->
+      
+      <!-- begin Unofficial Teaching -->
+      <section class="content-section">
+        
+        <header class="section-header">
+          <h2>(Unofficial) Teaching</h2>
+        </header>
+        
+        {% for item in site.data.teaching_unofficial %}
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h4 class="resume-item-details" itemprop="description">
+            {{ item.title }}
+          </h4>
+          <h5 class="resume-item-details award-title" itemprop="description">
+            {{ item.period }}
+          </h5>
+          <p class="resume-item-copy">
+            {{ item.description }}           
+          </p>
+        </div>
+        {% endfor %}  
+
+      </section>
+      <!-- end Unofficial Teaching -->
 
       <!-- begin Talks -->
       <section class="content-section">
