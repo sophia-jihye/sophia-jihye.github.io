@@ -1,33 +1,34 @@
 # Teaching
 
-- title: Teaching Assistant, SNU Data Mining Camp
-  period: February 2019 &ndash; Present
-  description: Assisted lectures on introduction to data mining for high school students.
-
-- title: Lecturer, <a href="https://www.gokams.or.kr/main/main.aspx" target="_blank">Korea Arts Management Service (예술경영지원센터)</a> "Data Analysis" Course
-  period: Fall 2022
-  description: Presented lectures on MS Excel-based data analysis techniques.
-
-- title: Lecturer, <a href="https://www.grandkorea.com/main/default" target="_blank">Grand Korea Leisure (그랜드코리아레저)</a> "Data Analysis" Course
-  period: Summer 2022
-  description: Presented video lectures on MS Excel-based data analysis techniques.
-
-- title: Lecturer, <a href="http://www.kbu.ac.kr/" target="_blank">Kyungbok University (경복대학교)</a> "Basics of Big Data Analysis" Course
-  period: Summer 2022
-  description: Presented video lectures on MS Excel-based data analysis techniques.
-  
-- title: Teaching Assistant, NH Nonghyup Bank (NH농협은행) "4th Industrial Revolution Core Talent Cultivation" Course
+- title: (OFFICIAL) Teaching Assistant, NH Nonghyup Bank (NH농협은행) "4th Industrial Revolution Core Talent Cultivation" Course
   period: Summer 2022
   description: Provided technical support for big data analysis program for NH Nonghyup Bank employees.  
   
-- title: Teaching Assistant, <a href="https://mkyu.co.kr/" target="_blank">MKYU</a> "Big Data Analysis" Course
-  period: Spring 2022
-  description: Provided feedbacks on data-driven value creation proposals written by MKYU students.
-  
-- title: Teaching Assistant, LG U+ (엘지유플러스) "Dream Big Data" Course
+- title: (OFFICIAL) Teaching Assistant, LG U+ (엘지유플러스) "Dream Big Data" Course
   period: Fall 2021 
   description: Provided technical support for Digital Transformation (DX) training program for LG U+ employees.
   
-- title: Lecturer, <a href="https://lei.snu.ac.kr/mobile/kr/klec/koreanTrust/koreanTrust.jsp" target="_blank">SNU Language Education Institute (서울대학교 언어교육원)</a>
+- title: (OFFICIAL) Lecturer, <a href="https://lei.snu.ac.kr/mobile/kr/klec/koreanTrust/koreanTrust.jsp" target="_blank">SNU Language Education Institute (서울대학교 언어교육원)</a>
   period: November 2019 &ndash; February 2021
   description: Presented lectures on python programming and machine learning for government-invited Malaysian students.
+
+- title: (UNOFFICIAL) Teaching Assistant, SNU Data Mining Camp
+  period: February 2019 &ndash; Present
+  description: Assisted lectures on introduction to data mining for high school students.
+
+- title: (UNOFFICIAL) Lecturer, <a href="https://www.gokams.or.kr/main/main.aspx" target="_blank">Korea Arts Management Service (예술경영지원센터)</a> "Data Analysis" Course
+  period: Fall 2022
+  description: Presented lectures on MS Excel-based data analysis techniques.
+
+- title: (UNOFFICIAL) Lecturer, <a href="https://www.grandkorea.com/main/default" target="_blank">Grand Korea Leisure (그랜드코리아레저)</a> "Data Analysis" Course
+  period: Summer 2022
+  description: Presented video lectures on MS Excel-based data analysis techniques.
+
+- title: (UNOFFICIAL) Lecturer, <a href="http://www.kbu.ac.kr/" target="_blank">Kyungbok University (경복대학교)</a> "Basics of Big Data Analysis" Course
+  period: Summer 2022
+  description: Presented video lectures on MS Excel-based data analysis techniques.
+  
+- title: (UNOFFICIAL) Teaching Assistant, <a href="https://mkyu.co.kr/" target="_blank">MKYU</a> "Big Data Analysis" Course
+  period: Spring 2022
+  description: Provided feedbacks on data-driven value creation proposals written by MKYU students.
+  
