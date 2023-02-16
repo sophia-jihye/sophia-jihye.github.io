@@ -1,3 +1,6 @@
+# `no style, please!` template
+* http://jekyllthemes.org/themes/no-style-please/
+
 # Resume template
 
 *A simple Jekyll + GitHub Pages powered resume template.*
