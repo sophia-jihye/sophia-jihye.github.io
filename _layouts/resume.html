@@ -229,6 +229,7 @@
           <p class="resume-item-copy">
             {{ item.description }}           
           </p>
+          {% if item.url %}<br>[<a href="{{ item.url }}" target="_blank" itemprop="url">Lecture Notes</a>]{% endif %}
         </div>
         {% endfor %}  
 
