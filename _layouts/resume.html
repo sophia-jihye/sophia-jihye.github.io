@@ -187,29 +187,6 @@
       </section>
       <!-- end Publications -->
       {% endif %}
-
-      {% if site.resume_section_projects %}
-      <!-- begin Projects -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Projects</h2>
-        </header>
-
-        {% for project in site.data.projects %}
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-          <h4 class="resume-item-details" itemprop="description">{{ project.eng_name }}</h4>
-          <h4 class="resume-item-details" itemprop="description">{{ project.kor_name }}</h4>
-          <p class="resume-item-copy">
-            {{ project.client }}
-            <br>{{ project.duration_and_role }}
-          </p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Projects -->
-      {% endif %}     
       
       <!-- begin Official Teaching -->
       <section class="content-section">
@@ -228,8 +205,8 @@
           </h5>
           <p class="resume-item-copy">
             {{ item.description }}           
-          </p>
           {% if item.url %}<br>[<a href="{{ item.url }}" target="_blank" itemprop="url">Lecture Notes</a>]{% endif %}
+          </p>
         </div>
         {% endfor %}  
 
@@ -260,6 +237,29 @@
       </section>
       <!-- end Unofficial Teaching -->
 
+      {% if site.resume_section_projects %}
+      <!-- begin Projects -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Projects</h2>
+        </header>
+
+        {% for project in site.data.projects %}
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
+          <h4 class="resume-item-details" itemprop="description">{{ project.eng_name }}</h4>
+          <h4 class="resume-item-details" itemprop="description">{{ project.kor_name }}</h4>
+          <p class="resume-item-copy">
+            {{ project.client }}
+            <br>{{ project.duration_and_role }}
+          </p>
+        </div>
+        {% endfor %}
+
+      </section>
+      <!-- end Projects -->
+      {% endif %}           
+      
       <!-- begin Talks -->
       <section class="content-section">
         
