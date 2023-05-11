@@ -1,5 +1,9 @@
 # Journals
 
+- title: Building knowledge graphs from technical documents using named entity recognition and normalization models
+  authors: Sung Hwan Jeon, Hye Jin Lee, <strong>Jihye Park</strong>, and Sungzoon Cho*
+  journal_and_status: <i>Intelligent Data Analysis</i>, accepted for publication.
+  
 - title: Hot Topic Detection in Central Bankers' Speeches
   authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
   journal_and_status: <i>Under Review</i> for the 4th revision to <i>Expert Systems with Applications</i>.
