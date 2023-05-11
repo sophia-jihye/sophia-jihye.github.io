@@ -1,21 +1,25 @@
 # Journals
 
-- title: Building knowledge graphs from technical documents using named entity recognition and normalization models
-  authors: Sung Hwan Jeon, Hye Jin Lee, <strong>Jihye Park</strong>, and Sungzoon Cho*
+- authors: Sung Hwan Jeon, Hye Jin Lee, <strong>Jihye Park</strong>, and Sungzoon Cho*
+  year: 2023
+  title: Building knowledge graphs from technical documents using named entity recognition and normalization models
   journal_and_status: <i>Intelligent Data Analysis</i>, accepted for publication.
   
-- title: Hot Topic Detection in Central Bankers' Speeches
-  authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
+- authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
+  year: 2023+
+  title: Hot Topic Detection in Central Bankers' Speeches
   journal_and_status: <i>Under Review</i> for the 4th revision to <i>Expert Systems with Applications</i>.
   code_url: https://github.com/sophia-jihye/hot_topic_detection_in_central_bankers_speeches
   
-- title: Automatic Construction of Financial Ontology-aware Sentiment Lexicon Using Direction-dependent Words
-  authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
+- authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
+  year: 2023+
+  title: Automatic Construction of Financial Ontology-aware Sentiment Lexicon Using Direction-dependent Words
   journal_and_status: <i>Under Review</i> for the submission to <i>Language Resources and Evaluation</i>.
   code_url: https://github.com/sophia-jihye/Senti-DD  
 
-- title: Incorporation of Company-Related Factual Knowledge into Pre-trained Language Models for Stock-Related Spam Tweet Filtering
-  authors: <strong>Jihye Park</strong>, Sungzoon Cho*
+- authors: <strong>Jihye Park</strong>, Sungzoon Cho*
+  year: 2023+
+  title: Incorporation of Company-Related Factual Knowledge into Pre-trained Language Models for Stock-Related Spam Tweet Filtering
   journal_and_status: <i>Under Review</i> for the 1st revision to <i>Expert Systems with Applications</i>.
   code_url: https://github.com/sophia-jihye/Incorporation_of_Company-Related_Factual_Knowledge_into_Pre-trained_Language_Models  
   
