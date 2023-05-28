@@ -1,15 +1,15 @@
 # Journals
-
+  
+- authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
+  year: 2023
+  title: Hot Topic Detection in Central Bankers' Speeches
+  journal_and_status: <i>Expert Systems with Applications</i>, accepted for publication.
+  code_url: https://github.com/sophia-jihye/hot_topic_detection_in_central_bankers_speeches
+  
 - authors: Sung Hwan Jeon, Hye Jin Lee, <strong>Jihye Park</strong>, and Sungzoon Cho*
   year: 2023
   title: Building knowledge graphs from technical documents using named entity recognition and normalization models
   journal_and_status: <i>Intelligent Data Analysis</i>, accepted for publication.
-  
-- authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
-  year: 2023+
-  title: Hot Topic Detection in Central Bankers' Speeches
-  journal_and_status: <i>Under Review</i> for the 4th revision to <i>Expert Systems with Applications</i>.
-  code_url: https://github.com/sophia-jihye/hot_topic_detection_in_central_bankers_speeches
   
 - authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
   year: 2023+
