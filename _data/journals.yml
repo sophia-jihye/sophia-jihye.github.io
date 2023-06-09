@@ -2,7 +2,7 @@
   
 - authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
   year: 2023
-  title: Hot Topic Detection in Central Bankers' Speeches
+  title: Hot Topic Detection in Central Bankers' Speeches [<a href="https://www.sciencedirect.com/science/article/pii/S0957417423010655" target="_blank">View</a>]
   journal_and_status: <i>Expert Systems with Applications</i>, accepted for publication. <br><small>● ESWA has 2021 Impact Factor of 8.665, based on the Journal Citation Reports by Clarivate Analytics (released in June 2022).</small>
   code_url: https://github.com/sophia-jihye/hot_topic_detection_in_central_bankers_speeches
   
