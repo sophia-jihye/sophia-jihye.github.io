@@ -137,7 +137,7 @@
         {% for item in site.data.journals %}
         <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
           <h4 class="resume-item-details" itemprop="description">
-            {{ item.title }}{% if item.view_url %}<br>[<a href="{{ item.view_url }}" target="_blank" itemprop="url">View</a>] {% endif %}
+            {{ item.title }}{% if item.view_url %} [<a href="{{ item.view_url }}" target="_blank" itemprop="url">View</a>] {% endif %}
           </h4>
           
           <p class="resume-item-copy">
