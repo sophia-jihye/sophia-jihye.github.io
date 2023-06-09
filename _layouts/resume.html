@@ -137,12 +137,12 @@
         {% for item in site.data.journals %}
         <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
           <h4 class="resume-item-details" itemprop="description">
-            {{ item.title }}
+            {{ item.title }}{% if item.view_url %}<br>[<a href="{{ item.view_url }}" target="_blank" itemprop="url">View</a>] {% endif %}
           </h4>
           
           <p class="resume-item-copy">
             {{ item.authors }} ({{ item.year }}), "{{ item.title }}," {{ item.journal_and_status }}
-            {% if item.view_url %}<br>[<a href="{{ item.view_url }}" target="_blank" itemprop="url">View</a>] {% endif %}{% if item.code_url %}<br>[<a href="{{ item.code_url }}" target="_blank" itemprop="url">Code</a>] {% endif %}
+            {% if item.code_url %}<br>[<a href="{{ item.code_url }}" target="_blank" itemprop="url">Code</a>] {% endif %}
           </p>
         </div>
         {% endfor %}
