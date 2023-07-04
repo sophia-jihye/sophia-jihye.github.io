@@ -11,19 +11,15 @@
   year: 2023
   title: Building knowledge graphs from technical documents using named entity recognition and normalization models
   journal_and_status: <i>Intelligent Data Analysis</i>, accepted for publication.
-  
-- authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
-  year: 2023+
-  title: Automatic Construction of Financial Ontology-aware Sentiment Lexicon Using Direction-dependent Words
-  journal_and_status: <i>Under Review</i> for the submission to <i>Language Resources and Evaluation</i>.
-  code_url: https://github.com/sophia-jihye/Senti-DD  
 
 - authors: <strong>Jihye Park</strong>, Sungzoon Cho*
   year: 2023+
   title: Incorporation of Company-Related Factual Knowledge into Pre-trained Language Models for Stock-Related Spam Tweet Filtering
   journal_and_status: <i>Under Review</i> for the 2nd revision to <i>Expert Systems with Applications</i>.
   code_url: https://github.com/sophia-jihye/Incorporation_of_Company-Related_Factual_Knowledge_into_Pre-trained_Language_Models  
-  
-# - title: Building knowledge graphs from technical documents using named entity recognition and normalization models
-#   authors: Sung Hwan Jeon, Hye Jin Lee, <strong>Jihye Park</strong>, Sungzoon Cho*
-#   journal_and_status: <i>Submitted</i> to the <i>Computers & Industrial Engineering</i>.
+
+- authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
+  year: 2023+
+  title: Automatic Construction of Financial Ontology-aware Sentiment Lexicon Using Direction-dependent Words
+  journal_and_status: <i>In revision</i> for the 1st revision comment from <i>Language Resources and Evaluation</i>.
+  code_url: https://github.com/sophia-jihye/Senti-DD  
