@@ -10,12 +10,12 @@
 - authors: Sung Hwan Jeon, Hye Jin Lee, <strong>Jihye Park</strong>, Sungzoon Cho*
   year: 2023
   title: Building knowledge graphs from technical documents using named entity recognition and normalization models
-  journal_and_status: <i>Intelligent Data Analysis</i>, accepted for publication.
+  journal_and_status: <i>Intelligent Data Analysis</i>, Accepted for publication. 
 
 - authors: <strong>Jihye Park</strong>, Sungzoon Cho*
-  year: 2023+
+  year: 2023
   title: Incorporation of Company-Related Factual Knowledge into Pre-trained Language Models for Stock-Related Spam Tweet Filtering
-  journal_and_status: <i>Under Review</i> for the 2nd revision to <i>Expert Systems with Applications</i>.
+  journal_and_status: <i>Expert Systems with Applications</i>, Accepted for publication. <br><small>● ESWA has 2022 Impact Factor of 8.5, based on the Journal Citation Reports by Clarivate Analytics (released in June 2023).</small>
   code_url: https://github.com/sophia-jihye/Incorporation_of_Company-Related_Factual_Knowledge_into_Pre-trained_Language_Models  
 
 - authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
