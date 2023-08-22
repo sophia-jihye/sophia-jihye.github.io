@@ -180,18 +180,6 @@
           </p>
         </div>
         
-        <!--<h3 class="resume-item-title underline" itemprop="name">In Preparation</h3>
-        {% for item in site.data.preparation %}
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h4 class="resume-item-details" itemprop="description">
-            {{ item.title }}
-          </h4>
-          <p class="resume-item-copy">
-            {{ item.authors }}
-          </p>
-        </div>
-        {% endfor %}
-        -->
     
       </section>
       <!-- end Publications -->
@@ -260,7 +248,8 @@
           <h4 class="resume-item-details" itemprop="description">{{ project.kor_name }}</h4>
           <p class="resume-item-copy">
             {{ project.client }}
-            <br>{{ project.duration_and_role }}
+            <br>{{ project.duration }}
+            {% if item.other_information %}{{ item.other_information }}{% endif %}
           </p>
         </div>
         {% endfor %}
