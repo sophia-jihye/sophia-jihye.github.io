@@ -141,8 +141,7 @@
           
           <p class="resume-item-copy">
             {{ item.authors }} ({{ item.year }}), "{{ item.title }}," {{ item.journal_and_status }}
-            {% if item.code_url %}<br>[<a href="{{ item.code_url }}" target="_blank" itemprop="url">Code</a>] {% endif %}
-            {% if item.data_url %}{{ item.data_url }}{% endif %}
+            {% if item.other_information %}{{ item.other_information }}{% endif %}
           </p>
         </div>
         {% endfor %}
