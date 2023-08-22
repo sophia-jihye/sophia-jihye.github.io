@@ -5,6 +5,7 @@
   title: Incorporation of Company-Related Factual Knowledge into Pre-trained Language Models for Stock-Related Spam Tweet Filtering
   journal_and_status: <i>Expert Systems with Applications</i>, Volume 234, 121021. <br><small>● ESWA has 2022 Impact Factor of 8.5, based on the Journal Citation Reports by Clarivate Analytics (released in June 2023).</small>
   code_url: https://github.com/sophia-jihye/Incorporation_of_Company-Related_Factual_Knowledge_into_Pre-trained_Language_Models
+  data_url: https://github.com/sophia-jihye/Incorporation_of_Company-Related_Factual_Knowledge_into_Pre-trained_Language_Models/tree/main/SEC-API.io
   view_url: https://www.sciencedirect.com/science/article/pii/S0957417423015233
 
 - authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
@@ -12,6 +13,7 @@
   title: Hot Topic Detection in Central Bankers' Speeches 
   journal_and_status: <i>Expert Systems with Applications</i>, Volume 230, 120563. <br><small>● ESWA has 2021 Impact Factor of 8.665, based on the Journal Citation Reports by Clarivate Analytics (released in June 2022).</small>
   code_url: https://github.com/sophia-jihye/hot_topic_detection_in_central_bankers_speeches
+  data_url: https://github.com/sophia-jihye/hot_topic_detection_in_central_bankers_speeches/tree/main/Fed_Speech_Transcripts
   view_url: https://www.sciencedirect.com/science/article/pii/S0957417423010655
   
 - authors: Sung Hwan Jeon, Hye Jin Lee, <strong>Jihye Park</strong>, Sungzoon Cho*
