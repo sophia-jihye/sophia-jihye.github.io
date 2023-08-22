@@ -241,14 +241,14 @@
           <h2>Projects</h2>
         </header>
 
-        {% for project in site.data.projects %}
+        {% for item in site.data.projects %}
         <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
           <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-          <h4 class="resume-item-details" itemprop="description">{{ project.eng_name }}</h4>
-          <h4 class="resume-item-details" itemprop="description">{{ project.kor_name }}</h4>
+          <h4 class="resume-item-details" itemprop="description">{{ item.eng_name }}</h4>
+          <h4 class="resume-item-details" itemprop="description">{{ item.kor_name }}</h4>
           <p class="resume-item-copy">
-            {{ project.client }}
-            <br>{{ project.duration }}
+            {{ item.client }}
+            <br>{{ item.duration }}
             {% if item.other_information %}{{ item.other_information }}{% endif %}
           </p>
         </div>
