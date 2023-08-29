@@ -11,7 +11,7 @@ sass:
 # Resume settings
 resume_avatar:                  "true"
 resume_name:                    "Jihye Park"
-resume_title:                   "Ph.D. Candidate at SNU Big Data AI Center"
+resume_title:                   ""
 
 # used for the contact button in _layouts/resume.html
 resume_contact_email:           "jihyeparkk@bdai.snu.ac.kr"
