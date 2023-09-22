@@ -133,6 +133,30 @@
         </div>
       </section>
       <!-- end Work Experience -->
+
+      {% if site.resume_section_projects %}
+      <!-- begin Projects -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Projects</h2>
+        </header>
+
+        {% for item in site.data.projects %}
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
+          <h4 class="resume-item-details" itemprop="description">{{ item.eng_name }}</h4>
+          <h4 class="resume-item-details" itemprop="description">{{ item.kor_name }}</h4>
+          <p class="resume-item-copy">
+            {{ item.client }}
+            <br>{{ item.duration }}
+            {% if item.other_information %}{{ item.other_information }}{% endif %}
+          </p>
+        </div>
+        {% endfor %}
+
+      </section>
+      <!-- end Projects -->
+      {% endif %}           
       
       {% if site.resume_section_publications %}
       <!-- begin Publications -->
@@ -244,30 +268,6 @@
 
       </section>-->
       <!-- end Unofficial Teaching -->
-
-      {% if site.resume_section_projects %}
-      <!-- begin Projects -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Projects</h2>
-        </header>
-
-        {% for item in site.data.projects %}
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-          <h4 class="resume-item-details" itemprop="description">{{ item.eng_name }}</h4>
-          <h4 class="resume-item-details" itemprop="description">{{ item.kor_name }}</h4>
-          <p class="resume-item-copy">
-            {{ item.client }}
-            <br>{{ item.duration }}
-            {% if item.other_information %}{{ item.other_information }}{% endif %}
-          </p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Projects -->
-      {% endif %}           
       
       <!-- begin Talks -->
       <!--<section class="content-section">
