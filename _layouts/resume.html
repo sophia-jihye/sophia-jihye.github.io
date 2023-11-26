@@ -98,7 +98,7 @@
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h4 class="resume-item-details" itemprop="description">Staff Engineer, Samsung Electronics (Mechatronics R&D Center; 설비기술연구소)</h4>
           <h5 class="resume-item-details award-title" itemprop="description">September 2023 &ndash; Present</h5>
-          <p class="resume-item-copy">Time-series data analytics and visualization for equipment/wafer failure prediction</p>
+          <p class="resume-item-copy">Analyzing equipment maintenance/operation records and sensor data for root cause analysis (RCA) of equipment failures</p>
           <p class="resume-item-copy" itemprop="description">
             <!--<ul class="resume-item-list">
               <li>Fixed software bugs related to thread that calculates java byte code coverage data and other statistical information.</li>
@@ -125,31 +125,7 @@
             </ul>
         </div>
       </section>
-      <!-- end Work Experience -->
-
-      {% if site.resume_section_projects %}
-      <!-- begin Projects -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Projects</h2>
-        </header>
-
-        {% for item in site.data.projects %}
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-          <h4 class="resume-item-details" itemprop="description">{{ item.eng_name }}</h4>
-          <h4 class="resume-item-details" itemprop="description">{{ item.kor_name }}</h4>
-          <p class="resume-item-copy">
-            {{ item.client }}
-            <br>{{ item.duration }}
-            {% if item.other_information %}{{ item.other_information }}{% endif %}
-          </p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Projects -->
-      {% endif %}           
+      <!-- end Work Experience -->        
       
       {% if site.resume_section_publications %}
       <!-- begin Publications -->
@@ -237,6 +213,30 @@
 
       </section>
       <!-- end Official Teaching -->
+
+      {% if site.resume_section_projects %}
+      <!-- begin Projects -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Projects</h2>
+        </header>
+
+        {% for item in site.data.projects %}
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
+          <h4 class="resume-item-details" itemprop="description">{{ item.eng_name }}</h4>
+          <h4 class="resume-item-details" itemprop="description">{{ item.kor_name }}</h4>
+          <p class="resume-item-copy">
+            {{ item.client }}
+            <br>{{ item.duration }}
+            {% if item.other_information %}{{ item.other_information }}{% endif %}
+          </p>
+        </div>
+        {% endfor %}
+
+      </section>
+      <!-- end Projects -->
+      {% endif %}   
       
       <!-- begin Unofficial Teaching -->
       <!--<section class="content-section">
@@ -285,7 +285,7 @@
       
       {% if site.resume_section_interests %}
       <!-- begin Interests -->
-      <!--<section class="content-section">
+      <section class="content-section">
 
         <header class="section-header">
           <h2>A Little More About Me</h2>
@@ -295,8 +295,8 @@
           <ul class="resume-item-list">
             <li>I enjoy watching TV series about profiling such as <a href="https://jihyeparkk.notion.site/Criminal-Minds-70537ea7d4714b1896bdda96f0e95a56" target="_blank">Criminal Minds</a>, <a href="https://jihyeparkk.notion.site/Mind-Hunter-07b969d178c54f90ac8c0a4ab5894d10" target="_blank">Mind Hunter</a>, and 시그널.</li>
             <li>I love music. My favorite artists include Taylor Swift and Chopin; and I also enjoy <a href="https://youtu.be/FHxNVVeF69c?t=1699" target="_blank">playing the piano</a>.</li>
-            <li>I recently found out that I like paintings! My favorite artists include <a href="https://terms.naver.com/entry.naver?docId=3573126&cid=58862&categoryId=58878" target="_blank">Claude Monet</a> and <a href="https://terms.naver.com/entry.naver?docId=3568082&cid=58862&categoryId=58876" target="_blank">Henri Matisse</a>.</li>
-            <li>I tend to be often touched by <a href="https://jihyeparkk.tumblr.com/" target="_blank">warm words</a>.</li>
+            <li>During my USA trip on July 2023, I found out that I like paintings! My favorite artists include <a href="https://terms.naver.com/entry.naver?docId=3573126&cid=58862&categoryId=58878" target="_blank">Claude Monet</a> and <a href="https://terms.naver.com/entry.naver?docId=3568082&cid=58862&categoryId=58876" target="_blank">Henri Matisse</a>.</li>
+            <li>I am easily moved by <a href="https://jihyeparkk.tumblr.com/" target="_blank">warm words</a>.</li>
             <li>I like to <a href="https://blog.naver.com/jihyeparkk" target="_blank">record</a> my thoughts and <a href="https://jihyeparkk.notion.site/20a939dbbd3a4059ad4df732a103075f?v=be1aa4b33f184701b353d479b7e9b8f1" target="_blank">feelings</a>.</li>
           </ul>
           
@@ -314,7 +314,7 @@
           
         </div>
 
-      </section>-->
+      </section>
       <!-- end Interests -->
       {% endif %}
       
