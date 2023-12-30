@@ -14,10 +14,10 @@
   other_information: <br>[<a href="https://github.com/sophia-jihye/hot_topic_detection_in_central_bankers_speeches/tree/main/Fed_Speech_Transcripts" target="_blank">Data</a>] [<a href="https://github.com/sophia-jihye/hot_topic_detection_in_central_bankers_speeches" target="_blank">Code</a>]
   view_url: https://www.sciencedirect.com/science/article/pii/S0957417423010655
   
-- authors: Sung Hwan Jeon, Hye Jin Lee, <strong>Jihye Park</strong>, Sungzoon Cho*
-  year: 2023
-  title: Building knowledge graphs from technical documents using named entity recognition and normalization models
-  journal_and_status: <i>Intelligent Data Analysis</i>, Accepted for publication. 
+# - authors: Sung Hwan Jeon, Hye Jin Lee, <strong>Jihye Park</strong>, Sungzoon Cho*
+#   year: 2023
+#   title: Building knowledge graphs from technical documents using named entity recognition and normalization models
+#   journal_and_status: <i>Intelligent Data Analysis</i>, Accepted for publication. 
 
 - authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
   year: 2024+
