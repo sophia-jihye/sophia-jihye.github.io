@@ -126,7 +126,56 @@
       </section>
       <!-- end Education -->
       {% endif %}
+
+      {% if site.resume_section_projects %}
+      <!-- begin Projects -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Projects</h2>
+        </header>
+
+        {% for item in site.data.projects %}
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
+          <h4 class="resume-item-details" itemprop="description">{{ item.eng_name }}</h4>
+          <h4 class="resume-item-details" itemprop="description">{{ item.kor_name }}</h4>
+          <p class="resume-item-copy">
+            {{ item.client }}
+            <br>{{ item.duration }}
+            {% if item.other_information %}{{ item.other_information }}{% endif %}
+          </p>
+        </div>
+        {% endfor %}
+
+      </section>
+      <!-- end Projects -->
+      {% endif %}  
       
+      <!-- begin Official Teaching -->
+      <section class="content-section">
+        
+        <header class="section-header">
+          <h2>Teaching</h2>
+        </header>
+        
+        {% for item in site.data.teaching_official %}
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h4 class="resume-item-details" itemprop="description">
+            {{ item.title }}
+          </h4>
+          <h5 class="resume-item-details award-title" itemprop="description">
+            {{ item.period }}
+          </h5>
+          <p class="resume-item-copy">
+            {{ item.description }}           
+          {% if item.url %}<br>[<a href="{{ item.url }}" target="_blank" itemprop="url">Lecture Notes</a>]{% endif %}
+          </p>
+        </div>
+        {% endfor %}  
+
+      </section>
+      <!-- end Official Teaching --> 
+
       {% if site.resume_section_publications %}
       <!-- begin Publications -->
       <section class="content-section">
@@ -163,7 +212,7 @@
         </div>
         {% endfor %}
         
-        <!--<h3 class="resume-item-title underline" itemprop="name">(Unofficial) Other Activities</h3>
+        <h3 class="resume-item-title underline" itemprop="name">(Unofficial) Other Activities</h3>
         <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
           <h4 class="resume-item-details" itemprop="description">
             가짜뉴스 문제 해결을 위한 범국민 SNS 캠페인 제안
@@ -182,61 +231,12 @@
             <br>arXiv preprint arXiv:2102.13350, 2021.
             <br>[<a href="https://techxplore.com/news/2021-03-music-circles-interactive-visualization-tool.html" target="_blank">Media Release</a>] [<a href="https://arxiv.org/abs/2102.13350" target="_blank">Paper</a>] [<a href="https://sophia-jihye.github.io/files/MusicVis/discover.html" target="_blank">Demo</a>] [<a href="https://youtu.be/OrB0qQz_A2c" target="_blank">Video</a>] [<a href="https://github.com/chonamwoo/snuDxd" target="_blank">Code</a>]
           </p>
-        </div>-->
+        </div>
         
     
       </section>
       <!-- end Publications -->
       {% endif %}
-      
-      <!-- begin Official Teaching -->
-      <section class="content-section">
-        
-        <header class="section-header">
-          <h2>Teaching</h2>
-        </header>
-        
-        {% for item in site.data.teaching_official %}
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h4 class="resume-item-details" itemprop="description">
-            {{ item.title }}
-          </h4>
-          <h5 class="resume-item-details award-title" itemprop="description">
-            {{ item.period }}
-          </h5>
-          <p class="resume-item-copy">
-            {{ item.description }}           
-          {% if item.url %}<br>[<a href="{{ item.url }}" target="_blank" itemprop="url">Lecture Notes</a>]{% endif %}
-          </p>
-        </div>
-        {% endfor %}  
-
-      </section>
-      <!-- end Official Teaching -->
-
-      {% if site.resume_section_projects %}
-      <!-- begin Projects -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Projects</h2>
-        </header>
-
-        {% for item in site.data.projects %}
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-          <h4 class="resume-item-details" itemprop="description">{{ item.eng_name }}</h4>
-          <h4 class="resume-item-details" itemprop="description">{{ item.kor_name }}</h4>
-          <p class="resume-item-copy">
-            {{ item.client }}
-            <br>{{ item.duration }}
-            {% if item.other_information %}{{ item.other_information }}{% endif %}
-          </p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Projects -->
-      {% endif %}   
       
       <!-- begin Unofficial Teaching -->
       <!--<section class="content-section">
@@ -299,18 +299,6 @@
             <li>I tend to be easily moved by <a href="https://jihyeparkk.tumblr.com/" target="_blank">warm words</a>.</li>
             <li>I like to <a href="https://blog.naver.com/jihyeparkk" target="_blank">record</a> my thoughts and <a href="https://jihyeparkk.notion.site/20a939dbbd3a4059ad4df732a103075f?v=be1aa4b33f184701b353d479b7e9b8f1" target="_blank">feelings</a>.</li>
           </ul>
-          
-          <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-            <h3 class="resume-item-title underline" itemprop="name">arXiv</h3>
-            <h4 class="resume-item-details" itemprop="description">
-              Music-Circles: Can Music Be Represented With Numbers?
-            </h4>
-            <p class="resume-item-copy">
-              Seokgi Kim†, <strong>Jihye Park†</strong>, Kihong Seong†, Namwoo Cho†, Junho Min†, Hwajung Hong*
-              <br>arXiv preprint arXiv:2102.13350, 2021.
-              <br>[<a href="https://techxplore.com/news/2021-03-music-circles-interactive-visualization-tool.html" target="_blank">Media Release</a>] [<a href="https://arxiv.org/abs/2102.13350" target="_blank">Paper</a>] [<a href="https://sophia-jihye.github.io/files/MusicVis/discover.html" target="_blank">Demo</a>] [<a href="https://youtu.be/OrB0qQz_A2c" target="_blank">Video</a>] [<a href="https://github.com/chonamwoo/snuDxd" target="_blank">Code</a>]
-            </p>
-          </div>
           
         </div>
 
