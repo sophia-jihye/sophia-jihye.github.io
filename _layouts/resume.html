@@ -212,6 +212,18 @@
           </p>
         </div>
         {% endfor %}
+
+        <h3 class="resume-item-title underline" itemprop="name">Patents</h3>
+        {% for item in site.data.patents %}
+        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
+          <h4 class="resume-item-details" itemprop="description">
+            {{ item.title }}
+          </h4>
+          <p class="resume-item-copy">
+            출원번호: {{ item.application_number }}
+          </p>
+        </div>
+        {% endfor %}
         
         <h3 class="resume-item-title underline" itemprop="name">(Unofficial) Other Activities</h3>
         <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
