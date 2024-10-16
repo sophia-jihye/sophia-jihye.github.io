@@ -128,6 +128,20 @@
       <!-- end Education -->
       {% endif %}
 
+      <section class="content-section">
+        <header class="section-header"><h2>Patents</h2></header>
+        {% for item in site.data.patents %}
+        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
+          <h4 class="resume-item-details" itemprop="description">
+            {{ item.title }}
+          </h4>
+          <p class="resume-item-copy">
+            출원번호: {{ item.application_number }}
+          </p>
+        </div>
+        {% endfor %}
+      </section>
+      
       {% if site.resume_section_projects %}
       <!-- begin Projects -->
       <section class="content-section">
@@ -209,18 +223,6 @@
           <p class="resume-item-copy">
             {{ item.authors }}
             <br>{{ item.host }}
-          </p>
-        </div>
-        {% endfor %}
-
-        <h3 class="resume-item-title underline" itemprop="name">Patents</h3>
-        {% for item in site.data.patents %}
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h4 class="resume-item-details" itemprop="description">
-            {{ item.title }}
-          </h4>
-          <p class="resume-item-copy">
-            출원번호: {{ item.application_number }}
           </p>
         </div>
         {% endfor %}
