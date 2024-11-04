@@ -141,6 +141,27 @@
         </div>
         {% endfor %}
       </section>
+
+      <!-- begin Conference -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Conference</h2>
+        </header>
+
+        {% for item in site.data.conferences %}
+        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
+          <h4 class="resume-item-details" itemprop="description">
+            {{ item.title }}
+          </h4>
+          <p class="resume-item-copy">
+            {{ item.authors }}
+            <br>{{ item.host }}
+          </p>
+        </div>
+        {% endfor %}
+        
+      </section>
+      <!-- end Conference -->
       
       {% if site.resume_section_projects %}
       <!-- begin Projects -->
@@ -210,19 +231,6 @@
           <p class="resume-item-copy">
             {{ item.authors }} ({{ item.year }}), "{{ item.title }}," {{ item.journal_and_status }}
             {% if item.other_information %}{{ item.other_information }}{% endif %}
-          </p>
-        </div>
-        {% endfor %}
-
-        <h3 class="resume-item-title underline" itemprop="name">Conferences</h3>
-        {% for item in site.data.conferences %}
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h4 class="resume-item-details" itemprop="description">
-            {{ item.title }}
-          </h4>
-          <p class="resume-item-copy">
-            {{ item.authors }}
-            <br>{{ item.host }}
           </p>
         </div>
         {% endfor %}
