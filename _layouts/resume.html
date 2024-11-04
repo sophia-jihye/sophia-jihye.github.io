@@ -162,55 +162,6 @@
         
       </section>
       <!-- end Conference -->
-      
-      {% if site.resume_section_projects %}
-      <!-- begin Projects -->
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Projects</h2>
-        </header>
-
-        {% for item in site.data.projects %}
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-          <h4 class="resume-item-details" itemprop="description">{{ item.eng_name }}</h4>
-          <h4 class="resume-item-details" itemprop="description">{{ item.kor_name }}</h4>
-          <p class="resume-item-copy">
-            {{ item.client }}
-            <br>{{ item.duration }}
-            {% if item.other_information %}{{ item.other_information }}{% endif %}
-          </p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Projects -->
-      {% endif %}  
-      
-      <!-- begin Official Teaching -->
-      <section class="content-section">
-        
-        <header class="section-header">
-          <h2>Teaching</h2>
-        </header>
-        
-        {% for item in site.data.teaching_official %}
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h4 class="resume-item-details" itemprop="description">
-            {{ item.title }}
-          </h4>
-          <h5 class="resume-item-details award-title" itemprop="description">
-            {{ item.period }}
-          </h5>
-          <p class="resume-item-copy">
-            {{ item.description }}           
-          {% if item.url %}<br>[<a href="{{ item.url }}" target="_blank" itemprop="url">Lecture Notes</a>]{% endif %}
-          </p>
-        </div>
-        {% endfor %}  
-
-      </section>
-      <!-- end Official Teaching --> 
 
       {% if site.resume_section_publications %}
       <!-- begin Publications -->
@@ -260,6 +211,55 @@
       </section>
       <!-- end Publications -->
       {% endif %}
+      
+      {% if site.resume_section_projects %}
+      <!-- begin Projects -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Projects</h2>
+        </header>
+
+        {% for item in site.data.projects %}
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
+          <h4 class="resume-item-details" itemprop="description">{{ item.eng_name }}</h4>
+          <h4 class="resume-item-details" itemprop="description">{{ item.kor_name }}</h4>
+          <p class="resume-item-copy">
+            {{ item.client }}
+            <br>{{ item.duration }}
+            {% if item.other_information %}{{ item.other_information }}{% endif %}
+          </p>
+        </div>
+        {% endfor %}
+
+      </section>
+      <!-- end Projects -->
+      {% endif %}  
+      
+      <!-- begin Official Teaching -->
+      <section class="content-section">
+        
+        <header class="section-header">
+          <h2>Teaching</h2>
+        </header>
+        
+        {% for item in site.data.teaching_official %}
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h4 class="resume-item-details" itemprop="description">
+            {{ item.title }}
+          </h4>
+          <h5 class="resume-item-details award-title" itemprop="description">
+            {{ item.period }}
+          </h5>
+          <p class="resume-item-copy">
+            {{ item.description }}           
+          {% if item.url %}<br>[<a href="{{ item.url }}" target="_blank" itemprop="url">Lecture Notes</a>]{% endif %}
+          </p>
+        </div>
+        {% endfor %}  
+
+      </section>
+      <!-- end Official Teaching --> 
       
       <!-- begin Unofficial Teaching -->
       <!--<section class="content-section">
