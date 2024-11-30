@@ -6,6 +6,12 @@
   journal_and_status: <i>Language Resources and Evaluation</i>, Open access, 25 May 2024, 1-27.
   code_url: https://github.com/sophia-jihye/Senti-DD  
   view_url: https://link.springer.com/article/10.1007/s10579-024-09737-9
+
+- authors: Sung Hwan Jeon, Hye Jin Lee, <strong>Jihye Park</strong>, Sungzoon Cho*
+  year: 2024
+  title: Building Knowledge Graphs from Technical Documents Using Named Entity Recognition and Edge Weight Updating Neural Network with Triplet Loss for Entity Normalization
+  journal_and_status: <i>Intelligent Data Analysis</i>, Volume 28 No. 1, 3 February 2024, pp. 331-355.
+  view_url: https://journals.sagepub.com/doi/full/10.3233/IDA-227129
   
 - authors: <strong>Jihye Park</strong>, Sungzoon Cho*
   year: 2023
