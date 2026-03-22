@@ -9,7 +9,7 @@ sass:
   style: compressed
 
 # Resume settings
-resume_avatar:                  "true"
+resume_avatar:                  "false"
 resume_name:                    "Jihye Park"
 resume_title:                   "a data scientist currently working on real-world industrial data"
 
