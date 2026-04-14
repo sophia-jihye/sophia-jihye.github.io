@@ -250,7 +250,7 @@
       </section>
       <!-- end Unofficial Teaching -->
       
-      <!--<section class="content-section">
+      <section class="content-section">
         <header class="section-header"><h2>Patents</h2></header>
         {% for item in site.data.patents %}
         <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
@@ -258,11 +258,11 @@
             {{ item.title }}
           </h4>
           <p class="resume-item-copy">
-            출원번호: {{ item.application_number }}
+            {{ item.numbers }}
           </p>
         </div>
         {% endfor %}
-      </section>-->
+      </section>
 
       <!-- begin Conference -->
       <section class="content-section">
