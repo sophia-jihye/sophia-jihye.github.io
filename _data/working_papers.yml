@@ -1,0 +1,5 @@
+- title: Not All Relevant Sentences Are Evidence: Direct Evidence Sentence Selection for Faithful RAG
+  keywords: Retrieval-Augmented Generation, hallucination reduction, evidence sentence selection, faithful generation, unsupported claim detection
+- title: Plan-Then-Write: Question-Guided Table-to-Report Generation with Large Language Models
+  keywords: table-to-report generation, T2R-Bench, question-guided evidence planning, operation-aware generation, numerical accuracy, information coverage, self-verification
+  
