@@ -204,7 +204,9 @@
           <h4 class="resume-item-details" itemprop="description">
             {{ item.title }}
           </h4>
-          
+          <p class="resume-item-copy">
+            {% if item.description %}{{ item.description }}{% endif %}
+          </p>
           <p class="resume-item-copy">
             Keywords: {% if item.keywords %}{{ item.keywords }}{% endif %}
           </p>
