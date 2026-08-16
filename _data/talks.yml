@@ -1,21 +1,25 @@
 # Talks and Knowledge Sharing
 
 - title: Big Data Analysis
+  role: Invited Speaker
   domain: data-analysis
   featured: false
   description: at <a href="http://www.kbu.ac.kr/" target="_blank">Kyungbok University (경복대학교)</a> on November 2022
 
 - title: Hot Topic Detection in Central Bankers' Speeches and Social Media
+  role: Invited Speaker
   domain: finance
   featured: true
   description: at College of Business Administration, Seoul National University (서울대학교 경영대학) on November 2021
   
 - title: Detection of word-changes in FOMC statements
+  role: Invited Speaker
   domain: finance
   featured: false
   description: at VAIV company (바이브컴퍼니) on August 2021
 
 - title: Hot Topic Detection in Central Bankers' Speeches for Text Mining-Based Early Warning Systems
+  role: Invited Speaker
   domain: finance
   featured: false
   description: at Korea Investment Corporation (한국투자공사) on October 2020

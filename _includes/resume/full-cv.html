@@ -66,7 +66,10 @@
 
     {% for item in site.data.teaching_official %}
     <article class="archive-item">
-      {% include resume/domain-tag.html domain=item.domain %}
+      <div class="record-labels">
+        {% include resume/domain-tag.html domain=item.domain %}
+        <span class="role-tag">{{ item.role }}</span>
+      </div>
       <h3>{{ item.title }}</h3>
       <p class="archive-period">{{ item.period }}</p>
       <p>{{ item.description }}{% if item.url %} [<a href="{{ item.url }}" target="_blank" rel="noopener">Lecture Notes</a>]{% endif %}</p>
@@ -75,7 +78,10 @@
 
     {% for item in site.data.teaching_unofficial %}
     <article class="archive-item">
-      {% include resume/domain-tag.html domain=item.domain %}
+      <div class="record-labels">
+        {% include resume/domain-tag.html domain=item.domain %}
+        <span class="role-tag">{{ item.role }}</span>
+      </div>
       <h3>{{ item.title }}</h3>
       <p class="archive-period">{{ item.period }}</p>
       <p>{{ item.description }}</p>
@@ -84,7 +90,10 @@
 
     {% for item in site.data.talks %}
     <article class="archive-item">
-      {% include resume/domain-tag.html domain=item.domain %}
+      <div class="record-labels">
+        {% include resume/domain-tag.html domain=item.domain %}
+        <span class="role-tag">{{ item.role }}</span>
+      </div>
       <h3>{{ item.title }}</h3>
       <p>{{ item.description }}</p>
     </article>
