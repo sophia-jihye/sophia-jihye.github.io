@@ -13,7 +13,7 @@
   featured: true
   summary: Built domain knowledge structures from semiconductor technical information.
   kor_name: 반도체 분야 지식 그래프 구축 연구 
-  client: Samsung Advanced Institute of Technology (삼성전자 종합기술원)
+  client: Samsung Electronics SAIT (삼성전자 SAIT)
   duration: February 2023 &ndash; June 2023
   
 - eng_name: Research on deep learning based robust techniques for equipment anomaly detection
@@ -21,7 +21,7 @@
   featured: true
   summary: Studied robust deep-learning methods for equipment anomaly detection.
   kor_name: 딥러닝을 활용한 강건한 설비 이상 탐지 기법 연구
-  client: Samsung Electronics (삼성전자 설비기술연구소)
+  client: Samsung Electronics Digital Twin Center (삼성전자 Digital Twin 센터)
   duration: December 2020 &ndash; June 2023
   
 - eng_name: Text mining based hot topic detection from social media data
@@ -36,5 +36,5 @@
   domain: manufacturing
   featured: false
   kor_name: 인공지능 기술을 통한 문서 분류 자동화 시스템 구축
-  client: Samsung Electronics (삼성전자 혁신센터)
+  client: Samsung Electronics AI/PX Center (삼성전자 AI/PX센터)
   duration: June 2019 &ndash; March 2021

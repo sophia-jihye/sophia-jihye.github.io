@@ -39,7 +39,7 @@ a {
 
 .site-shell {
   width: calc(100% - 48px);
-  max-width: 960px;
+  max-width: 920px;
   margin: 0 auto;
 }
 
@@ -54,28 +54,28 @@ a {
 
 .section-intro {
   max-width: 680px;
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.8rem;
 
   h2 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    letter-spacing: -.035em;
-    line-height: 1.2;
+    letter-spacing: -.025em;
+    line-height: 1.3;
   }
 
   > p:not(.eyebrow) { color: $muted; }
 
   .section-lead {
-    margin: 1rem 0 0;
+    margin: .8rem 0 0;
     color: $ink;
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 600;
   }
 }
 
 .section-intro-compact {
-  h2 { font-size: 1.45rem; }
+  h2 { font-size: 1.3rem; }
 
   .section-note {
     max-width: 620px;
@@ -86,7 +86,7 @@ a {
 
 // Myself
 
-.myself { padding: 1.6rem 0 6rem; }
+.myself { padding: 1.5rem 0 4.5rem; }
 
 .myself-nav {
   display: flex;
@@ -115,32 +115,39 @@ a {
 }
 
 .myself-content {
-  max-width: 780px;
-  padding-top: 7rem;
+  max-width: 720px;
+  padding-top: 5rem;
 
   h1 {
     margin: 0;
-    font-size: 4rem;
+    font-size: 2.9rem;
     font-weight: 700;
-    letter-spacing: -.06em;
-    line-height: 1;
+    letter-spacing: -.045em;
+    line-height: 1.1;
   }
 }
 
 .myself-role {
-  margin: 1rem 0 2.8rem;
-  color: $muted;
+  margin: .8rem 0 0;
+  color: $ink;
   font-size: .95rem;
   font-weight: 600;
 }
 
+.myself-affiliation {
+  margin: .2rem 0 2rem;
+  color: $muted;
+  font-size: .85rem;
+  font-weight: 500;
+}
+
 .myself-headline {
-  max-width: 700px;
+  max-width: 620px;
   margin: 0;
-  font-size: 2.2rem;
+  font-size: 1.55rem;
   font-weight: 600;
-  letter-spacing: -.045em;
-  line-height: 1.2;
+  letter-spacing: -.03em;
+  line-height: 1.3;
 }
 
 .myself-summary,
@@ -194,7 +201,7 @@ a {
 .current-work,
 .profile-record,
 .full-cv-section {
-  padding: 4.5rem 0;
+  padding: 3.5rem 0;
   border-top: 1px solid $line;
 }
 
@@ -263,11 +270,11 @@ a {
 }
 
 .profile-heading {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 
   h2 {
     margin: 0;
-    font-size: 1.45rem;
+    font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: -.025em;
   }
@@ -323,7 +330,7 @@ a {
 
     strong {
       display: block;
-      font-size: 1.15rem;
+      font-size: 1.05rem;
       font-weight: 600;
     }
 
@@ -341,18 +348,18 @@ a {
 .full-cv-content { padding-top: .5rem; }
 
 .archive-section {
-  padding: 3.2rem 0 1.2rem;
+  padding: 2.6rem 0 1rem;
   border-bottom: 1px solid $line;
 
   &:last-child { border-bottom: 0; }
 }
 
 .archive-heading {
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.5rem;
 
   h2 {
     margin: 0;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: -.025em;
   }
@@ -458,8 +465,8 @@ a {
 .print-only { display: none !important; }
 
 @media (max-width: 760px) {
-  .myself-content h1 { font-size: 3.2rem; }
-  .myself-headline { font-size: 1.8rem; }
+  .myself-content h1 { font-size: 2.65rem; }
+  .myself-headline { font-size: 1.45rem; }
   .work-flow { grid-template-columns: repeat(2, 1fr); }
 
   .work-stage {
@@ -478,20 +485,20 @@ a {
 
 @media (max-width: 560px) {
   .site-shell { width: calc(100% - 32px); }
-  .myself { padding-bottom: 4.5rem; }
-  .myself-content { padding-top: 5rem; }
-  .myself-content h1 { font-size: 2.8rem; }
-  .myself-role { margin-bottom: 2rem; }
-  .myself-headline { font-size: 1.6rem; }
+  .myself { padding-bottom: 3.5rem; }
+  .myself-content { padding-top: 3.5rem; }
+  .myself-content h1 { font-size: 2.35rem; }
+  .myself-affiliation { margin-bottom: 1.6rem; }
+  .myself-headline { font-size: 1.35rem; }
   .myself-links { gap: .8rem; }
   .myself-actions { align-items: stretch; flex-direction: column; }
 
   .current-work,
   .profile-record,
-  .full-cv-section { padding: 3.5rem 0; }
+  .full-cv-section { padding: 3rem 0; }
 
-  .section-intro h2 { font-size: 1.7rem; }
-  .section-intro-compact h2 { font-size: 1.35rem; }
+  .section-intro h2 { font-size: 1.4rem; }
+  .section-intro-compact h2 { font-size: 1.25rem; }
 
   .work-flow,
   .role-note { grid-template-columns: 1fr; }
