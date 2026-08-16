@@ -1,6 +1,6 @@
 # Site settings
-title: "Jihye Park — Industrial AI Systems Researcher & Engineer"
-description: "Industrial AI systems across manufacturing, finance, and marketing."
+title: "Jihye Park — Manufacturing AI Systems Researcher & Engineer"
+description: "Manufacturing AI systems researcher and engineer at Samsung Electronics."
 
 # Build settings
 markdown: kramdown
@@ -11,7 +11,7 @@ sass:
 # Resume settings
 resume_avatar:                  "false"
 resume_name:                    "Jihye Park"
-resume_title:                   "Industrial AI Systems Researcher & Engineer"
+resume_title:                   "Manufacturing AI Systems Researcher & Engineer"
 
 # used for the contact button in _layouts/resume.html
 resume_contact_email:           "sophia.jihyeparkk@gmail.com"
