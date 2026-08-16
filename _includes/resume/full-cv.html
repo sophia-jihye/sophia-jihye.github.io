@@ -25,15 +25,16 @@
         {% include resume/domain-tag.html domain=item.domain %}
         <span class="index-tag">{{ item.type }}</span>
       </div>
-      <h3>{{ item.title }}</h3>
+      <h3>{% if item.view_url %}<a href="{{ item.view_url }}" target="_blank" rel="noopener">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h3>
       <p>{{ item.authors }}<br>{{ item.description }}</p>
+      {% if item.media_url or item.demo_url or item.video_url or item.code_url %}
       <p class="archive-links">
         {% if item.media_url %}<a href="{{ item.media_url }}" target="_blank" rel="noopener">Media</a>{% endif %}
-        {% if item.view_url %}<a href="{{ item.view_url }}" target="_blank" rel="noopener">View</a>{% endif %}
         {% if item.demo_url %}<a href="{{ item.demo_url }}" target="_blank" rel="noopener">Demo</a>{% endif %}
         {% if item.video_url %}<a href="{{ item.video_url }}" target="_blank" rel="noopener">Video</a>{% endif %}
         {% if item.code_url %}<a href="{{ item.code_url }}" target="_blank" rel="noopener">Code</a>{% endif %}
       </p>
+      {% endif %}
     </article>
     {% endfor %}
   </section>
@@ -44,7 +45,7 @@
     {% for item in site.data.conferences %}
     <article class="archive-item">
       {% include resume/domain-tag.html domain=item.domain %}
-      <h3>{{ item.title }}</h3>
+      <h3>{% if item.view_url %}<a href="{{ item.view_url }}" target="_blank" rel="noopener">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h3>
       <p>{{ item.authors }}<br>{{ item.host }}</p>
     </article>
     {% endfor %}
