@@ -4,6 +4,7 @@
   var targetId = "research-contributions";
   var details = document.getElementById(targetId);
   var trigger = document.querySelector('[data-open-details="' + targetId + '"]');
+  var closeTrigger = document.querySelector('[data-close-details="' + targetId + '"]');
 
   if (!details || !trigger) {
     return;
@@ -19,6 +20,20 @@
   });
 
   details.addEventListener("toggle", syncExpandedState);
+
+  if (closeTrigger) {
+    closeTrigger.hidden = false;
+    closeTrigger.addEventListener("click", function () {
+      var summary = details.querySelector("summary");
+
+      details.open = false;
+      syncExpandedState();
+
+      if (summary) {
+        summary.focus();
+      }
+    });
+  }
 
   if (window.location.hash === "#" + targetId) {
     details.open = true;
