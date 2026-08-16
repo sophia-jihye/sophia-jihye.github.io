@@ -1,37 +1,20 @@
 <div class="full-cv-content">
   <section class="archive-section">
     <header class="archive-heading"><h2>Work Experience</h2></header>
+    <p class="archive-note">Each stage added a layer: market understanding, enterprise software, and manufacturing AI.</p>
 
+    {% for item in site.data.experience %}
     <article class="archive-item">
-      <h3>Software Engineer, Samsung Electronics</h3>
-      <p class="archive-period">September 2023 &ndash; Present</p>
-      <p>Developed industrial AI services for semiconductor manufacturing across agentic AI, predictive AI, and production-ready AI pipelines.</p>
+      <h3>{{ item.role }}, {{ item.company }}</h3>
+      <p class="archive-period">{{ item.period }}</p>
+      <p>{{ item.summary }}</p>
+      {% if item.bullets %}
       <ul>
-        <li>Designed and implemented agentic AI services that combine <strong>RAG-based information retrieval, domain knowledge-based query understanding, and metadata-based dynamic prompt engineering</strong>.</li>
-        <li>Developed predictive and explainable AI applications for manufacturing data, including <strong>root-cause identification, anomaly detection, and BERT-based terminology-alias matching</strong>.</li>
-        <li>Built and evaluated production-ready AI pipelines using Airflow, Kubernetes, and Docker for <strong>scalable processing</strong> and real-time service operation.</li>
+        {% for bullet in item.bullets %}<li>{{ bullet }}</li>{% endfor %}
       </ul>
+      {% endif %}
     </article>
-
-    <article class="archive-item">
-      <h3>Backend Developer, Bankware Global</h3>
-      <p class="archive-period">July 2016 &ndash; June 2018</p>
-      <p>Worked as a backend developer using Java, Linux, and Oracle.</p>
-      <ul>
-        <li>Worked as a member of the Software Research Laboratory's infrastructure and interface solution teams.</li>
-        <li>Developed backend processes for the OK Bae-Jung Foundation scholarship website with frontend developers and UI/UX designers.</li>
-      </ul>
-    </article>
-
-    <article class="archive-item">
-      <h3>Market Researcher, Hankook Research</h3>
-      <p class="archive-period">January 2016 &ndash; May 2016</p>
-      <p>Analyzed user-generated survey data using MS Excel.</p>
-      <ul>
-        <li>Conducted group surveys and home interviews in Los Angeles for a report on built-in home appliances.</li>
-        <li>Conducted interviews with experts in the digital signage field.</li>
-      </ul>
-    </article>
+    {% endfor %}
   </section>
 
   {% if site.resume_section_education %}
@@ -89,10 +72,12 @@
     </header>
 
     {% for item in site.data.journals %}
-    <article class="archive-item">
+    <article class="archive-item journal-record">
       {% include resume/domain-tag.html domain=item.domain %}
-      <h3>{{ item.title }}{% if item.view_url %} [<a href="{{ item.view_url }}" target="_blank" rel="noopener">View</a>]{% endif %}</h3>
-      <p>{{ item.authors }} ({{ item.year }}), “{{ item.title }},” {{ item.journal_and_status }}{% if item.other_information %}{{ item.other_information }}{% endif %}</p>
+      <h3>{% if item.view_url %}<a href="{{ item.view_url }}" target="_blank" rel="noopener">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h3>
+      <p class="journal-authors">{{ item.authors }}</p>
+      <p class="journal-citation"><em>{{ item.journal }}</em> &middot; {{ item.publication_details }} &middot; Published {{ item.publication_date }}</p>
+      {% if item.code_url or item.other_information %}<p class="journal-links">{% if item.code_url %}<a href="{{ item.code_url }}" target="_blank" rel="noopener">Code</a>{% endif %}{{ item.other_information }}</p>{% endif %}
     </article>
     {% endfor %}
   </section>

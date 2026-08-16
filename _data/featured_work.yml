@@ -1,10 +1,4 @@
 - domain: manufacturing
-  type: Journal
-  title: Knowledge Graphs from Technical Documents
-  summary: Structured technical knowledge with entity extraction and normalization.
-  url: https://journals.sagepub.com/doi/full/10.3233/IDA-227129
-
-- domain: manufacturing
   type: Patent
   title: Knowledge-Enhanced Sensor Name Classification
   summary: Applied domain-aware language models to manufacturing terminology.
@@ -13,18 +7,6 @@
   type: Research Project
   title: Robust Equipment Anomaly Detection
   summary: Studied deep-learning methods for semiconductor equipment data.
-
-- domain: finance
-  type: Journal
-  title: Hot Topic Detection in Central Bankers' Speeches
-  summary: Detected emerging signals in central-bank communication.
-  url: https://www.sciencedirect.com/science/article/pii/S0957417423010655
-
-- domain: finance
-  type: Journal
-  title: Factual Knowledge for Financial Spam Filtering
-  summary: Added company knowledge to pretrained language models.
-  url: https://www.sciencedirect.com/science/article/pii/S0957417423015233
 
 - domain: finance
   type: Research

@@ -5,15 +5,21 @@
   bullets:
     - Building a multi-agent AI Copilot for equipment productivity-loss analysis.
     - Developing a context-aware router that selects and connects specialist agents.
-    - Connecting manufacturing data and operational knowledge to engineering decisions.
+    - Developing predictive and explainable AI for root-cause analysis, anomaly detection, and terminology normalization.
+    - Building production AI pipelines with Airflow, Kubernetes, and Docker.
 
 - company: Bankware Global
   role: Backend Developer
   period: July 2016 &ndash; June 2018
   summary: Built enterprise backend systems using Java, Linux, and Oracle.
+  bullets:
+    - Worked in the Software Research Laboratory's infrastructure and interface solution teams.
+    - Developed backend processes for the OK Bae-Jung Foundation scholarship website.
 
 - company: Hankook Research
   role: Market Researcher
   period: January 2016 &ndash; May 2016
   summary: Analyzed customer data and conducted field research.
-
+  bullets:
+    - Conducted group surveys and home interviews in Los Angeles for a report on built-in home appliances.
+    - Interviewed experts in the digital signage field.
