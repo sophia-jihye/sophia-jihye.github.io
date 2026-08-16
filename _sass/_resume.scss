@@ -318,6 +318,8 @@ a {
 // Full CV
 
 .full-cv-details {
+  + .full-cv-details { margin-top: 1.25rem; }
+
   > summary {
     display: flex;
     align-items: center;
@@ -340,6 +342,14 @@ a {
   }
 }
 
+.summary-description {
+  display: block;
+  margin-top: .2rem;
+  color: $muted;
+  font-size: .72rem;
+  font-weight: 500;
+}
+
 .summary-action {
   color: $muted;
   font-size: .7rem;
@@ -348,6 +358,22 @@ a {
 }
 
 .full-cv-content { padding-top: .5rem; }
+
+.about-content {
+  max-width: 800px;
+  padding: 1.5rem 0 .25rem;
+
+  ul {
+    margin: 0;
+    padding-left: 1.15rem;
+  }
+
+  li {
+    margin: .6rem 0;
+    font-size: .86rem;
+    line-height: 1.65;
+  }
+}
 
 .archive-section {
   padding: 2.6rem 0 1rem;

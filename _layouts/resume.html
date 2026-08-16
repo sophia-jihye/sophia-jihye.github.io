@@ -18,12 +18,25 @@
           <details class="full-cv-details">
             <summary>
               <span>
-                <strong>Journal Publications, Proceedings, Patents, and more</strong>
+                <strong>Research &amp; Knowledge Contributions</strong>
+                <small class="summary-description">Publications, proceedings, patents, teaching, and projects</small>
               </span>
               <span class="summary-action no-print" aria-hidden="true">Open</span>
             </summary>
             {% include resume/full-cv.html %}
           </details>
+
+          {% if site.resume_section_interests %}
+          <details class="full-cv-details" id="about">
+            <summary>
+              <span>
+                <strong>A Little More About Me</strong>
+              </span>
+              <span class="summary-action no-print" aria-hidden="true">Open</span>
+            </summary>
+            {% include resume/about.html %}
+          </details>
+          {% endif %}
         </section>
       </main>
 
