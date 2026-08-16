@@ -8,14 +8,15 @@ $soft: #f7f8f7;
 $accent: #285f54;
 
 html {
-  background: #fff;
+  background-color: #fff;
+  color-scheme: light;
   scroll-behavior: smooth;
 }
 
 body {
   @include sans;
   margin: 0;
-  background: #fff;
+  background-color: #fff;
   color: $ink;
   font-size: 16px;
   line-height: 1.65;
@@ -41,6 +42,7 @@ a {
   width: calc(100% - 48px);
   max-width: 920px;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 .eyebrow {
@@ -115,7 +117,7 @@ a {
 }
 
 .myself-content {
-  max-width: 720px;
+  max-width: none;
   padding-top: 5rem;
 
   h1 {
@@ -142,7 +144,7 @@ a {
 }
 
 .myself-headline {
-  max-width: 620px;
+  max-width: none;
   margin: 0;
   font-size: 1.55rem;
   font-weight: 600;
@@ -152,7 +154,7 @@ a {
 
 .myself-summary,
 .myself-focus {
-  max-width: 650px;
+  max-width: none;
   margin: 1rem 0 0;
   color: $muted;
   font-size: 1rem;
@@ -463,6 +465,12 @@ a {
 }
 
 .print-only { display: none !important; }
+
+@media (min-width: 900px) {
+  .myself-headline,
+  .myself-summary,
+  .myself-focus { white-space: nowrap; }
+}
 
 @media (max-width: 760px) {
   .myself-content h1 { font-size: 2.65rem; }
