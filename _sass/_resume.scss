@@ -204,7 +204,6 @@ a {
 .profile-record,
 .full-cv-section {
   padding: 3.5rem 0;
-  border-top: 1px solid $line;
 }
 
 .work-flow {
@@ -213,8 +212,6 @@ a {
   padding: 0;
   grid-template-columns: repeat(4, 1fr);
   list-style: none;
-  border-top: 1px solid $line;
-  border-bottom: 1px solid $line;
 }
 
 .work-stage {
@@ -290,7 +287,6 @@ a {
 
 .profile-item {
   padding: 1.2rem 0;
-  border-top: 1px solid $line;
 
   h3 {
     margin: 0 0 .3rem;
@@ -325,8 +321,6 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 1.25rem 0;
-    border-top: 1px solid $ink;
-    border-bottom: 1px solid $line;
     cursor: pointer;
     list-style: none;
 
@@ -377,9 +371,6 @@ a {
 
 .archive-section {
   padding: 2.6rem 0 1rem;
-  border-bottom: 1px solid $line;
-
-  &:last-child { border-bottom: 0; }
 }
 
 .archive-heading {
@@ -479,7 +470,6 @@ a {
 
 .page-footer {
   padding: 3rem 0 4rem;
-  border-top: 1px solid $line;
   color: $muted;
   text-align: left;
 
@@ -502,14 +492,13 @@ a {
 @media (max-width: 760px) {
   .myself-content h1 { font-size: 2.65rem; }
   .myself-headline { font-size: 1.45rem; }
-  .work-flow { grid-template-columns: repeat(2, 1fr); }
+  .work-flow {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.5rem;
+  }
 
   .work-stage {
-    border-bottom: 1px solid $line;
-
     &:nth-child(2) { border-right: 0; }
-    &:nth-child(3),
-    &:nth-child(4) { border-bottom: 0; }
   }
 
   .profile-record-grid {
@@ -542,9 +531,7 @@ a {
   .work-stage:not(:first-child) {
     padding: 1.2rem 0;
     border-right: 0;
-    border-bottom: 1px solid $line !important;
 
-    &:last-child { border-bottom: 0 !important; }
     h3 { margin-top: 1rem; }
   }
 
