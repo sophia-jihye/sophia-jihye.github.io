@@ -306,6 +306,11 @@ a {
 // Full CV
 
 .full-cv-details {
+  padding: 0 1.25rem;
+  border: 1px solid $line;
+  border-radius: 5px;
+  background: #fff;
+
   + .full-cv-details { margin-top: 1.25rem; }
 
   > summary {
@@ -548,6 +553,7 @@ a {
 
   .section-intro h2 { font-size: 1.4rem; }
   .section-intro-compact h2 { font-size: 1.25rem; }
+  .full-cv-details { padding: 0 .9rem; }
 
   .work-flow,
   .role-note { grid-template-columns: 1fr; }
@@ -583,6 +589,7 @@ a {
   .profile-record-grid { break-inside: avoid; }
   .full-cv-details > summary { display: none; }
   .full-cv-details:not([open]) > .full-cv-content { display: block !important; }
+  .full-cv-details { padding: 0; border: 0; }
   .archive-item { break-inside: avoid; }
   .page-footer { margin-top: 1rem; padding: 1rem 0 0; }
 }
