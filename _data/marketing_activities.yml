@@ -1,5 +1,6 @@
 - title: 가짜뉴스 문제 해결을 위한 범국민 SNS 캠페인 제안
   domain: marketing
+  type: Project
   featured: true
   authors: 윤서윤 (중앙대학교 광고홍보학과)†, 조영아 (중앙대학교 도시계획부동산학과)†, 최영현 (중앙대학교 프랑스어문학과)†, 박재홍 (중앙대학교 역사학과)†, <strong>박지혜*</strong>
   description: 2023 KOSAC "시민 문화 정착 프로젝트 기획" 공모전 출품
@@ -7,6 +8,7 @@
 
 - title: "Music-Circles: Can Music Be Represented With Numbers?"
   domain: marketing
+  type: Preprint
   featured: true
   authors: Seokgi Kim†, <strong>Jihye Park†</strong>, Kihong Seong†, Namwoo Cho†, Junho Min†, Hwajung Hong*
   description: arXiv preprint arXiv:2102.13350, 2021.

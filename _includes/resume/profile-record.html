@@ -1,0 +1,52 @@
+<section class="profile-record" id="experience">
+  <div class="profile-record-grid">
+    <section class="profile-section">
+      <header class="profile-heading">
+        <p class="eyebrow">Career</p>
+        <h2>Work Experience</h2>
+        <p>Each stage added a layer: market understanding, enterprise software, and manufacturing AI.</p>
+      </header>
+
+      {% for item in site.data.experience %}
+      <article class="profile-item">
+        <h3>{{ item.role }}, {{ item.company }}</h3>
+        <p class="profile-period">{{ item.period }}</p>
+        <p>{{ item.summary }}</p>
+        {% if item.bullets %}
+        <ul>
+          {% for bullet in item.bullets %}<li>{{ bullet }}</li>{% endfor %}
+        </ul>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </section>
+
+    {% if site.resume_section_education %}
+    <section class="profile-section" id="education">
+      <header class="profile-heading">
+        <p class="eyebrow">Academic Background</p>
+        <h2>Education</h2>
+      </header>
+
+      <article class="profile-item">
+        <h3>Seoul National University</h3>
+        <p class="profile-period">Ph.D. in <a href="http://ie.snu.ac.kr/" target="_blank" rel="noopener">Industrial Engineering</a> &bull; August 2023</p>
+        <ul>
+          <li>Majored in Data Mining.</li>
+          <li>Advised by Professor <a href="https://zoon.snu.ac.kr/" target="_blank" rel="noopener">Sungzoon Cho</a>.</li>
+          <li>Dissertation: “Financial Risk Assessment Automation: Hot Topic Detection in Speeches, Sentiment Analysis of News Articles, and Spam Filtering on Twitter” (금융위험 평가 자동화: 연설문 핫토픽 탐지, 뉴스 감성 분석 및 트위터 스팸 필터링) [<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=SAS1a8cAAAAJ&citation_for_view=SAS1a8cAAAAJ:WF5omc3nYNoC" target="_blank" rel="noopener">View</a>]</li>
+        </ul>
+      </article>
+
+      <article class="profile-item">
+        <h3>Korea University</h3>
+        <p class="profile-period">Bachelor of <a href="https://biz.korea.ac.kr/eng/main/main.html" target="_blank" rel="noopener">Business Administration</a> &bull; February 2016</p>
+        <ul>
+          <li>Internship at Linewalks (2014): Suggested ideas for a healthcare big-data service and designed <a href="https://drive.google.com/drive/folders/1ARzCMG3mOYWIS373qG8300W4Do0lTwI9?usp=sharing" target="_blank" rel="noopener">marketing promotion materials</a>.</li>
+          <li>Internship at Hankook Tire Hungary Ltd. (2016): Worked with Hungarian colleagues on EU taxes and communicated in English.</li>
+        </ul>
+      </article>
+    </section>
+    {% endif %}
+  </div>
+</section>

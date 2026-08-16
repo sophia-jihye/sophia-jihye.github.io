@@ -1,46 +1,65 @@
 <div class="full-cv-content">
+  {% if site.resume_section_publications %}
   <section class="archive-section">
-    <header class="archive-heading"><h2>Work Experience</h2></header>
-    <p class="archive-note">Each stage added a layer: market understanding, enterprise software, and manufacturing AI.</p>
+    <header class="archive-heading">
+      <h2>Journal Publications</h2>
+      <p>* Corresponding author &middot; † Equal contribution</p>
+    </header>
 
-    {% for item in site.data.experience %}
+    {% for item in site.data.journals %}
+    <article class="archive-item journal-record">
+      <div class="record-labels">
+        {% include resume/domain-tag.html domain=item.domain %}
+        <span class="index-tag">{{ item.indexing }}</span>
+      </div>
+      <h3>{% if item.view_url %}<a href="{{ item.view_url }}" target="_blank" rel="noopener">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h3>
+      <p class="journal-authors">{{ item.authors }}</p>
+      <p class="journal-citation"><em>{{ item.journal }}</em> &middot; {{ item.publication_details }} &middot; Published {{ item.publication_date }}</p>
+      {% if item.code_url or item.other_information %}<p class="journal-links">{% if item.code_url %}<a href="{{ item.code_url }}" target="_blank" rel="noopener">Code</a>{% endif %}{{ item.other_information }}</p>{% endif %}
+    </article>
+    {% endfor %}
+
+    {% for item in site.data.marketing_activities %}
+    <article class="archive-item journal-record">
+      <div class="record-labels">
+        {% include resume/domain-tag.html domain=item.domain %}
+        <span class="index-tag">{{ item.type }}</span>
+      </div>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.authors }}<br>{{ item.description }}</p>
+      <p class="archive-links">
+        {% if item.media_url %}<a href="{{ item.media_url }}" target="_blank" rel="noopener">Media</a>{% endif %}
+        {% if item.view_url %}<a href="{{ item.view_url }}" target="_blank" rel="noopener">View</a>{% endif %}
+        {% if item.demo_url %}<a href="{{ item.demo_url }}" target="_blank" rel="noopener">Demo</a>{% endif %}
+        {% if item.video_url %}<a href="{{ item.video_url }}" target="_blank" rel="noopener">Video</a>{% endif %}
+        {% if item.code_url %}<a href="{{ item.code_url }}" target="_blank" rel="noopener">Code</a>{% endif %}
+      </p>
+    </article>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  <section class="archive-section">
+    <header class="archive-heading"><h2>Proceedings</h2></header>
+    {% for item in site.data.conferences %}
     <article class="archive-item">
-      <h3>{{ item.role }}, {{ item.company }}</h3>
-      <p class="archive-period">{{ item.period }}</p>
-      <p>{{ item.summary }}</p>
-      {% if item.bullets %}
-      <ul>
-        {% for bullet in item.bullets %}<li>{{ bullet }}</li>{% endfor %}
-      </ul>
-      {% endif %}
+      {% include resume/domain-tag.html domain=item.domain %}
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.authors }}<br>{{ item.host }}</p>
     </article>
     {% endfor %}
   </section>
 
-  {% if site.resume_section_education %}
   <section class="archive-section">
-    <header class="archive-heading"><h2>Education</h2></header>
-
+    <header class="archive-heading"><h2>Patents</h2></header>
+    {% for item in site.data.patents %}
     <article class="archive-item">
-      <h3>Seoul National University</h3>
-      <p class="archive-period">Ph.D. in <a href="http://ie.snu.ac.kr/" target="_blank" rel="noopener">Industrial Engineering</a> &bull; August 2023</p>
-      <ul>
-        <li>Majored in Data Mining.</li>
-        <li>Advised by Professor <a href="https://zoon.snu.ac.kr/" target="_blank" rel="noopener">Sungzoon Cho</a>.</li>
-        <li>Dissertation: “Financial Risk Assessment Automation: Hot Topic Detection in Speeches, Sentiment Analysis of News Articles, and Spam Filtering on Twitter” (금융위험 평가 자동화: 연설문 핫토픽 탐지, 뉴스 감성 분석 및 트위터 스팸 필터링) [<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=SAS1a8cAAAAJ&citation_for_view=SAS1a8cAAAAJ:WF5omc3nYNoC" target="_blank" rel="noopener">View</a>]</li>
-      </ul>
+      {% include resume/domain-tag.html domain=item.domain %}
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.numbers }}</p>
     </article>
-
-    <article class="archive-item">
-      <h3>Korea University</h3>
-      <p class="archive-period">Bachelor of <a href="https://biz.korea.ac.kr/eng/main/main.html" target="_blank" rel="noopener">Business Administration</a> &bull; February 2016</p>
-      <ul>
-        <li>Internship at Linewalks (2014): Suggested ideas for a healthcare big-data service and designed <a href="https://drive.google.com/drive/folders/1ARzCMG3mOYWIS373qG8300W4Do0lTwI9?usp=sharing" target="_blank" rel="noopener">marketing promotion materials</a>.</li>
-        <li>Internship at Hankook Tire Hungary Ltd. (2016): Worked with Hungarian colleagues on EU taxes and communicated in English.</li>
-      </ul>
-    </article>
+    {% endfor %}
   </section>
-  {% endif %}
 
   <section class="archive-section">
     <header class="archive-heading"><h2>Teaching &amp; Knowledge Sharing</h2></header>
@@ -62,45 +81,12 @@
       <p>{{ item.description }}</p>
     </article>
     {% endfor %}
-  </section>
 
-  {% if site.resume_section_publications %}
-  <section class="archive-section">
-    <header class="archive-heading">
-      <h2>Journal Publications</h2>
-      <p>* Corresponding author &middot; † Equal contribution</p>
-    </header>
-
-    {% for item in site.data.journals %}
-    <article class="archive-item journal-record">
-      {% include resume/domain-tag.html domain=item.domain %}
-      <h3>{% if item.view_url %}<a href="{{ item.view_url }}" target="_blank" rel="noopener">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h3>
-      <p class="journal-authors">{{ item.authors }}</p>
-      <p class="journal-citation"><em>{{ item.journal }}</em> &middot; {{ item.publication_details }} &middot; Published {{ item.publication_date }}</p>
-      {% if item.code_url or item.other_information %}<p class="journal-links">{% if item.code_url %}<a href="{{ item.code_url }}" target="_blank" rel="noopener">Code</a>{% endif %}{{ item.other_information }}</p>{% endif %}
-    </article>
-    {% endfor %}
-  </section>
-  {% endif %}
-
-  <section class="archive-section">
-    <header class="archive-heading"><h2>Patents</h2></header>
-    {% for item in site.data.patents %}
+    {% for item in site.data.talks %}
     <article class="archive-item">
       {% include resume/domain-tag.html domain=item.domain %}
       <h3>{{ item.title }}</h3>
-      <p>{{ item.numbers }}</p>
-    </article>
-    {% endfor %}
-  </section>
-
-  <section class="archive-section">
-    <header class="archive-heading"><h2>Conferences</h2></header>
-    {% for item in site.data.conferences %}
-    <article class="archive-item">
-      {% include resume/domain-tag.html domain=item.domain %}
-      <h3>{{ item.title }}</h3>
-      <p>{{ item.authors }}<br>{{ item.host }}</p>
+      <p>{{ item.description }}</p>
     </article>
     {% endfor %}
   </section>
@@ -118,35 +104,6 @@
     {% endfor %}
   </section>
   {% endif %}
-
-  <section class="archive-section">
-    <header class="archive-heading"><h2>Marketing Projects</h2></header>
-    {% for item in site.data.marketing_activities %}
-    <article class="archive-item">
-      {% include resume/domain-tag.html domain=item.domain %}
-      <h3>{{ item.title }}</h3>
-      <p>{{ item.authors }}<br>{{ item.description }}</p>
-      <p class="archive-links">
-        {% if item.media_url %}<a href="{{ item.media_url }}" target="_blank" rel="noopener">Media</a>{% endif %}
-        {% if item.view_url %}<a href="{{ item.view_url }}" target="_blank" rel="noopener">View</a>{% endif %}
-        {% if item.demo_url %}<a href="{{ item.demo_url }}" target="_blank" rel="noopener">Demo</a>{% endif %}
-        {% if item.video_url %}<a href="{{ item.video_url }}" target="_blank" rel="noopener">Video</a>{% endif %}
-        {% if item.code_url %}<a href="{{ item.code_url }}" target="_blank" rel="noopener">Code</a>{% endif %}
-      </p>
-    </article>
-    {% endfor %}
-  </section>
-
-  <section class="archive-section">
-    <header class="archive-heading"><h2>Invited Talks</h2></header>
-    {% for item in site.data.talks %}
-    <article class="archive-item">
-      {% include resume/domain-tag.html domain=item.domain %}
-      <h3>{{ item.title }}</h3>
-      <p>{{ item.description }}</p>
-    </article>
-    {% endfor %}
-  </section>
 
   {% if site.resume_section_interests %}
   <section class="archive-section archive-about">

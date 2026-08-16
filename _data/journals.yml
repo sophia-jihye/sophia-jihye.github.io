@@ -4,6 +4,7 @@
   year: 2024
   title: Automatic Construction of Direction-aware Sentiment Lexicon Using Direction-dependent Words
   domain: finance
+  indexing: SCIE
   featured: true
   summary: Built a direction-aware sentiment lexicon for domain-sensitive text analysis.
   journal: Language Resources and Evaluation
@@ -17,6 +18,7 @@
   year: 2023
   title: Incorporation of Company-Related Factual Knowledge into Pre-trained Language Models for Stock-Related Spam Tweet Filtering
   domain: finance
+  indexing: SCIE
   featured: true
   summary: Added company knowledge to language models for financial spam filtering.
   journal: Expert Systems with Applications
@@ -30,6 +32,7 @@
   year: 2023
   title: Building Knowledge Graphs from Technical Documents Using Named Entity Recognition and Edge Weight Updating Neural Network with Triplet Loss for Entity Normalization
   domain: manufacturing
+  indexing: SCIE
   featured: true
   summary: Structured technical documents as knowledge graphs with entity normalization.
   journal: Intelligent Data Analysis
@@ -42,6 +45,7 @@
   year: 2023
   title: Hot Topic Detection in Central Bankers' Speeches 
   domain: finance
+  indexing: SCIE
   featured: true
   summary: Detected emerging topics in central-bank speeches for risk assessment.
   journal: Expert Systems with Applications
