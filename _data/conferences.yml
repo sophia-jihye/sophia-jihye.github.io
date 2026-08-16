@@ -9,7 +9,7 @@
   host: Fall Conference of Korean Institute of Industrial Engineers (KIIE), Seoul, Korea, 2024.
 
 # 2024.05 @여수 (구두발표) 2024 대한산업공학회 춘계학술대회 (KIIE).
-- title: Machine Learning 기반 반도체 공정/설비 불량 원인 분석 방법론 [<a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11800825" target="_blank">View</a>]
+- title: Machine Learning 기반 반도체 공정/설비 불량 원인 분석 방법론 <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11800825" target="_blank">View</a>
   domain: manufacturing
   featured: true
   summary: Studied machine-learning methods for semiconductor root-cause analysis.
@@ -17,7 +17,7 @@
   host: Spring Conference of Korean Institute of Industrial Engineers (KIIE), Yeosu, Korea, 2024.
 
 # 2023.11.03 @UNIST (포스터발표) 2023 대한산업공학회 추계학술대회 (KIIE).
-- title: PacMAP을 이용한 반도체 제조 공정 데이터에서의 이상 탐지 [<a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11609850" target="_blank">View</a>]
+- title: PacMAP을 이용한 반도체 제조 공정 데이터에서의 이상 탐지 <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11609850" target="_blank">View</a>
   domain: manufacturing
   featured: false
   authors: 유용재, 최진우, <strong>박지혜</strong>, 조성준*, 유하늘, 박광균, 임재용, 박현섭, 윤동운, 김수정, 조성민, 금의석
@@ -33,7 +33,7 @@
   host: Summer Conference of Korea Data Mining Society (KDMS), Gangneung, Korea, 2023.
 
 # 2023.06.01 @제주 신화월드 (구두 발표)
-- title: 반도체 제조 도메인 특화 지식 그래프 구축을 위한 엔티티 추출 방법 연구 [<a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11475405" target="_blank">View</a>]
+- title: 반도체 제조 도메인 특화 지식 그래프 구축을 위한 엔티티 추출 방법 연구 <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11475405" target="_blank">View</a>
   domain: manufacturing
   featured: true
   summary: Extracted entities for a semiconductor domain knowledge graph.
@@ -47,14 +47,14 @@
   host: Summer Conference of Korea Data Mining Society (KDMS), Busan, Korea, 2022.
 
 # 2022.06.02 @라마다 제주 (포스터 발표)
-- title: UMAP과 HDBSCAN 군집화 기반의 반도체 제조 공정 데이터 대상 레이블 전파 방법 [<a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11084597" target="_blank">View</a>]
+- title: UMAP과 HDBSCAN 군집화 기반의 반도체 제조 공정 데이터 대상 레이블 전파 방법 <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11084597" target="_blank">View</a>
   domain: manufacturing
   featured: false
   authors: <strong>박지혜</strong>, 최진우, 유용재, 조성준*, 정수호, 인창현, 박현섭, 조기윤, 윤동운, 김상혁, 조윤혁, 이은영, 이승호, 금의석
   host: Spring Conference of Korean Institute of Industrial Engineers (KIIE), Jeju, Korea, 2022.
 
 # 2021. @제주 국제컨벤션센터
-- title: Automatic Keyword Extraction and NER-Normalization Based Knowledge Network Construction for Patent Summarization [<a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10576964" target="_blank">View</a>]
+- title: Automatic Keyword Extraction and NER-Normalization Based Knowledge Network Construction for Patent Summarization <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10576964" target="_blank">View</a>
   domain: manufacturing
   featured: false
   authors: Hye Jin Lee, Sung Whan Jeon, <strong>Jihye Park</strong>, Sungzoon Cho*
