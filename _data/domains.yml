@@ -1,0 +1,13 @@
+- id: manufacturing
+  name: Manufacturing
+  label: Current focus
+  summary: Turning equipment data and operational knowledge into engineering decisions.
+
+- id: finance
+  name: Finance
+  summary: Finding risk signals and factual knowledge in financial text.
+
+- id: marketing
+  name: Marketing
+  summary: Understanding markets, audiences, and communication through data.
+

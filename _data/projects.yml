@@ -1,27 +1,40 @@
 # Projects
 
 - eng_name: Information Extraction, Data Labeling, and Dataset Shift Adaptation Algorithms for Big Data Analysis Model Construction
+  domain: finance
+  featured: false
   kor_name: 빅데이터 분석 모델 구축을 위한 정보 추출, 데이터 레이블링, 데이터셋 변화 적응 알고리즘 연구
   client: National Research Foundation of Korea (한국연구재단)
   duration: September 2021 &ndash; August 2023
   other_information: <br>Scraped domain-specific textual data such as <a href="https://github.com/sophia-jihye/Collecting_FOMC_Statements_and_Eliminating_Stop-phrases" target="_blank">FOMC Statements</a> and <a href="https://github.com/sophia-jihye/Collecting_FOMC_Minutes" target="_blank">FOMC Minutes</a>.
 
 - eng_name: Research on building knowledge graph in the semiconductor domain
+  domain: manufacturing
+  featured: true
+  summary: Built domain knowledge structures from semiconductor technical information.
   kor_name: 반도체 분야 지식 그래프 구축 연구 
   client: Samsung Advanced Institute of Technology (삼성전자 종합기술원)
   duration: February 2023 &ndash; June 2023
   
 - eng_name: Research on deep learning based robust techniques for equipment anomaly detection
+  domain: manufacturing
+  featured: true
+  summary: Studied robust deep-learning methods for equipment anomaly detection.
   kor_name: 딥러닝을 활용한 강건한 설비 이상 탐지 기법 연구
   client: Samsung Electronics (삼성전자 설비기술연구소)
   duration: December 2020 &ndash; June 2023
   
 - eng_name: Text mining based hot topic detection from social media data
+  domain: finance
+  featured: true
+  summary: Detected investment-related topics from social media text.
   kor_name: 소셜미디어 텍스트 분석을 통한 투자 관련 핫토픽 탐지
   client: NH Investment & Securities (NH투자증권)
   duration: September 2021 &ndash; December 2021
 
 - eng_name: Development of automatic classification system for documents using artificial intelligence technology
+  domain: manufacturing
+  featured: false
   kor_name: 인공지능 기술을 통한 문서 분류 자동화 시스템 구축
   client: Samsung Electronics (삼성전자 혁신센터)
   duration: June 2019 &ndash; March 2021

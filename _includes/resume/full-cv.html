@@ -1,0 +1,177 @@
+<div class="full-cv-content">
+  <section class="archive-section">
+    <header class="archive-heading"><h2>Work Experience</h2></header>
+
+    <article class="archive-item">
+      <h3>Software Engineer, Samsung Electronics</h3>
+      <p class="archive-period">September 2023 &ndash; Present</p>
+      <p>Developed industrial AI services for semiconductor manufacturing across agentic AI, predictive AI, and production-ready AI pipelines.</p>
+      <ul>
+        <li>Designed and implemented agentic AI services that combine <strong>RAG-based information retrieval, domain knowledge-based query understanding, and metadata-based dynamic prompt engineering</strong>.</li>
+        <li>Developed predictive and explainable AI applications for manufacturing data, including <strong>root-cause identification, anomaly detection, and BERT-based terminology-alias matching</strong>.</li>
+        <li>Built and evaluated production-ready AI pipelines using Airflow, Kubernetes, and Docker for <strong>scalable processing</strong> and real-time service operation.</li>
+      </ul>
+    </article>
+
+    <article class="archive-item">
+      <h3>Backend Developer, Bankware Global</h3>
+      <p class="archive-period">July 2016 &ndash; June 2018</p>
+      <p>Worked as a backend developer using Java, Linux, and Oracle.</p>
+      <ul>
+        <li>Worked as a member of the Software Research Laboratory's infrastructure and interface solution teams.</li>
+        <li>Developed backend processes for the OK Bae-Jung Foundation scholarship website with frontend developers and UI/UX designers.</li>
+      </ul>
+    </article>
+
+    <article class="archive-item">
+      <h3>Market Researcher, Hankook Research</h3>
+      <p class="archive-period">January 2016 &ndash; May 2016</p>
+      <p>Analyzed user-generated survey data using MS Excel.</p>
+      <ul>
+        <li>Conducted group surveys and home interviews in Los Angeles for a report on built-in home appliances.</li>
+        <li>Conducted interviews with experts in the digital signage field.</li>
+      </ul>
+    </article>
+  </section>
+
+  {% if site.resume_section_education %}
+  <section class="archive-section">
+    <header class="archive-heading"><h2>Education</h2></header>
+
+    <article class="archive-item">
+      <h3>Seoul National University</h3>
+      <p class="archive-period">Ph.D. in <a href="http://ie.snu.ac.kr/" target="_blank" rel="noopener">Industrial Engineering</a> &bull; August 2023</p>
+      <ul>
+        <li>Majored in Data Mining.</li>
+        <li>Advised by Professor <a href="https://zoon.snu.ac.kr/" target="_blank" rel="noopener">Sungzoon Cho</a>.</li>
+        <li>Dissertation: “Financial Risk Assessment Automation: Hot Topic Detection in Speeches, Sentiment Analysis of News Articles, and Spam Filtering on Twitter” (금융위험 평가 자동화: 연설문 핫토픽 탐지, 뉴스 감성 분석 및 트위터 스팸 필터링) [<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=SAS1a8cAAAAJ&citation_for_view=SAS1a8cAAAAJ:WF5omc3nYNoC" target="_blank" rel="noopener">View</a>]</li>
+      </ul>
+    </article>
+
+    <article class="archive-item">
+      <h3>Korea University</h3>
+      <p class="archive-period">Bachelor of <a href="https://biz.korea.ac.kr/eng/main/main.html" target="_blank" rel="noopener">Business Administration</a> &bull; February 2016</p>
+      <ul>
+        <li>Internship at Linewalks (2014): Suggested ideas for a healthcare big-data service and designed <a href="https://drive.google.com/drive/folders/1ARzCMG3mOYWIS373qG8300W4Do0lTwI9?usp=sharing" target="_blank" rel="noopener">marketing promotion materials</a>.</li>
+        <li>Internship at Hankook Tire Hungary Ltd. (2016): Worked with Hungarian colleagues on EU taxes and communicated in English.</li>
+      </ul>
+    </article>
+  </section>
+  {% endif %}
+
+  <section class="archive-section">
+    <header class="archive-heading"><h2>Teaching &amp; Knowledge Sharing</h2></header>
+
+    {% for item in site.data.teaching_official %}
+    <article class="archive-item">
+      <span class="domain-tag domain-{{ item.domain }}">{{ item.domain | capitalize }}</span>
+      <h3>{{ item.title }}</h3>
+      <p class="archive-period">{{ item.period }}</p>
+      <p>{{ item.description }}{% if item.url %} [<a href="{{ item.url }}" target="_blank" rel="noopener">Lecture Notes</a>]{% endif %}</p>
+    </article>
+    {% endfor %}
+
+    {% for item in site.data.teaching_unofficial %}
+    <article class="archive-item">
+      <span class="domain-tag domain-{{ item.domain }}">{{ item.domain | capitalize }}</span>
+      <h3>{{ item.title }}</h3>
+      <p class="archive-period">{{ item.period }}</p>
+      <p>{{ item.description }}</p>
+    </article>
+    {% endfor %}
+  </section>
+
+  {% if site.resume_section_publications %}
+  <section class="archive-section">
+    <header class="archive-heading">
+      <h2>Journal Publications</h2>
+      <p>* Corresponding author &middot; † Equal contribution</p>
+    </header>
+
+    {% for item in site.data.journals %}
+    <article class="archive-item">
+      <span class="domain-tag domain-{{ item.domain }}">{{ item.domain | capitalize }}</span>
+      <h3>{{ item.title }}{% if item.view_url %} [<a href="{{ item.view_url }}" target="_blank" rel="noopener">View</a>]{% endif %}</h3>
+      <p>{{ item.authors }} ({{ item.year }}), “{{ item.title }},” {{ item.journal_and_status }}{% if item.other_information %}{{ item.other_information }}{% endif %}</p>
+    </article>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  <section class="archive-section">
+    <header class="archive-heading"><h2>Patents</h2></header>
+    {% for item in site.data.patents %}
+    <article class="archive-item">
+      <span class="domain-tag domain-{{ item.domain }}">{{ item.domain | capitalize }}</span>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.numbers }}</p>
+    </article>
+    {% endfor %}
+  </section>
+
+  <section class="archive-section">
+    <header class="archive-heading"><h2>Conferences</h2></header>
+    {% for item in site.data.conferences %}
+    <article class="archive-item">
+      <span class="domain-tag domain-{{ item.domain }}">{{ item.domain | capitalize }}</span>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.authors }}<br>{{ item.host }}</p>
+    </article>
+    {% endfor %}
+  </section>
+
+  {% if site.resume_section_projects %}
+  <section class="archive-section">
+    <header class="archive-heading"><h2>Research Projects</h2></header>
+    {% for item in site.data.projects %}
+    <article class="archive-item">
+      <span class="domain-tag domain-{{ item.domain }}">{{ item.domain | capitalize }}</span>
+      <h3>{{ item.eng_name }}</h3>
+      <p class="archive-subtitle">{{ item.kor_name }}</p>
+      <p>{{ item.client }}<br>{{ item.duration }}{% if item.other_information %}{{ item.other_information }}{% endif %}</p>
+    </article>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  <section class="archive-section">
+    <header class="archive-heading"><h2>Marketing Projects</h2></header>
+    {% for item in site.data.marketing_activities %}
+    <article class="archive-item">
+      <span class="domain-tag domain-{{ item.domain }}">{{ item.domain | capitalize }}</span>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.authors }}<br>{{ item.description }}</p>
+      <p class="archive-links">
+        {% if item.media_url %}<a href="{{ item.media_url }}" target="_blank" rel="noopener">Media</a>{% endif %}
+        {% if item.view_url %}<a href="{{ item.view_url }}" target="_blank" rel="noopener">View</a>{% endif %}
+        {% if item.demo_url %}<a href="{{ item.demo_url }}" target="_blank" rel="noopener">Demo</a>{% endif %}
+        {% if item.video_url %}<a href="{{ item.video_url }}" target="_blank" rel="noopener">Video</a>{% endif %}
+        {% if item.code_url %}<a href="{{ item.code_url }}" target="_blank" rel="noopener">Code</a>{% endif %}
+      </p>
+    </article>
+    {% endfor %}
+  </section>
+
+  <section class="archive-section">
+    <header class="archive-heading"><h2>Invited Talks</h2></header>
+    {% for item in site.data.talks %}
+    <article class="archive-item">
+      <span class="domain-tag domain-{{ item.domain }}">{{ item.domain | capitalize }}</span>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.description }}</p>
+    </article>
+    {% endfor %}
+  </section>
+
+  {% if site.resume_section_interests %}
+  <section class="archive-section archive-about">
+    <header class="archive-heading"><h2>A Little More About Me</h2></header>
+    <ul>
+      <li>I enjoy watching TV series about profiling such as <a href="https://jihyeparkk.notion.site/Criminal-Minds-70537ea7d4714b1896bdda96f0e95a56" target="_blank" rel="noopener">Criminal Minds</a>, <a href="https://jihyeparkk.notion.site/Mind-Hunter-07b969d178c54f90ac8c0a4ab5894d10" target="_blank" rel="noopener">Mind Hunter</a>, and 시그널.</li>
+      <li>I value a <strong>simple</strong> lifestyle and like to write down my <a href="https://broad-coat-25f.notion.site/13de6c042c968039b7f0c4d6f3364cf6?v=13de6c042c9681579567000c20449ecd&pvs=4" target="_blank" rel="noopener">thoughts and feelings</a> without dwelling too much on the past.</li>
+      <li>I am easily moved by <a href="https://jihyeparkk.tumblr.com/" target="_blank" rel="noopener">warm words</a>, and I genuinely like people. I believe that no one is purely evil. One of my favorite phrases is, “<strong>Love all, trust few, do wrong to none.</strong>”</li>
+      <li>I love music. My favorite artists include <a href="https://youtu.be/Ox_wfL_JJy0?si=aRq1QZSxaMmYRXBK" target="_blank" rel="noopener">윤하</a>, <a href="https://youtu.be/etywYG4ZSvg?si=m6vk9FK_-5Ddf0hi" target="_blank" rel="noopener">Taylor Swift</a>, and <a href="https://youtu.be/qb0Ebqe9JJo?si=4whChGW6d6Zyc69Y" target="_blank" rel="noopener">Chopin</a>. I also enjoy <a href="https://youtu.be/FHxNVVeF69c?t=1699" target="_blank" rel="noopener">playing the piano</a>. Music always helps me chill out.</li>
+    </ul>
+  </section>
+  {% endif %}
+</div>

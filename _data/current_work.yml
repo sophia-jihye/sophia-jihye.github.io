@@ -1,0 +1,16 @@
+label: What I Build Now
+title: AI Copilot for Equipment Productivity
+problem: Semiconductor equipment can keep running while producing fewer wafers per hour than expected.
+system: The Copilot connects equipment data, manuals, maintenance records, past actions, and specialist AI agents.
+role: I design the context-aware router. It understands each request and connects the right specialist agents.
+direction: Moving from decision support toward human-supervised automated action.
+stages:
+  - title: Detect Loss
+    description: Find where equipment productivity is falling.
+  - title: Find Causes
+    description: Analyze relevant parameters and operational context.
+  - title: Retrieve Knowledge
+    description: Connect manuals, maintenance records, and past actions.
+  - title: Recommend Actions
+    description: Provide evidence for engineering decisions.
+

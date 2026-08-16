@@ -1,0 +1,25 @@
+{% assign myself = site.data.myself %}
+<header class="myself" itemscope itemtype="https://schema.org/Person">
+  <nav class="myself-nav no-print" aria-label="Profile links">
+    <a class="myself-mark" href="#top" aria-label="Back to top">JP</a>
+    <div class="myself-links">
+      <a href="{{ site.resume_social_links.resume_github_url }}" target="_blank" rel="noopener">GitHub</a>
+      <a href="{{ site.resume_social_links.resume_website_url }}" target="_blank" rel="noopener">Scholar</a>
+      <a href="mailto:{{ site.resume_contact_email }}">Email</a>
+    </div>
+  </nav>
+
+  <div class="myself-content">
+    <p class="eyebrow">{{ myself.label }}</p>
+    <h1 itemprop="name">{{ myself.name }}</h1>
+    <p class="myself-role" itemprop="jobTitle">{{ myself.role }}</p>
+    <p class="myself-headline">{{ myself.headline }}</p>
+    <p class="myself-summary" itemprop="description">{{ myself.summary }}</p>
+    <p class="myself-focus">{{ myself.focus }}</p>
+    <div class="myself-actions no-print">
+      <a class="button button-primary" href="#current-work">See what I build</a>
+      <a class="button button-secondary" href="#full-cv">View full CV</a>
+    </div>
+  </div>
+</header>
+

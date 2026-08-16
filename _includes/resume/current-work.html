@@ -1,0 +1,31 @@
+{% assign work = site.data.current_work %}
+<section class="current-work" id="current-work">
+  <div class="section-intro">
+    <p class="eyebrow">{{ work.label }}</p>
+    <h2>{{ work.title }}</h2>
+    <p class="section-lead">{{ work.problem }}</p>
+    <p>{{ work.system }}</p>
+  </div>
+
+  <ol class="work-flow" aria-label="Copilot workflow">
+    {% for stage in work.stages %}
+    <li class="work-stage">
+      <span class="stage-number">0{{ forloop.index }}</span>
+      <h3>{{ stage.title }}</h3>
+      <p>{{ stage.description }}</p>
+    </li>
+    {% endfor %}
+  </ol>
+
+  <div class="role-note">
+    <div>
+      <p class="role-label">My role</p>
+      <p>{{ work.role }}</p>
+    </div>
+    <div>
+      <p class="role-label">Direction</p>
+      <p>{{ work.direction }}</p>
+    </div>
+  </div>
+</section>
+

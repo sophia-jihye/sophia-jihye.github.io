@@ -1,13 +1,19 @@
 # Working Papers
 
 - title: "Question Structuring First: Execution Planning for Industrial AI Agent Systems"
+  domain: manufacturing
+  featured: false
   description: "This paper proposes a question-structuring-first approach to execution planning in industrial AI agent systems. Instead of directly generating execution plans from user queries, the framework first structures the question into task categories, required outputs, referenced metrics, and argument policies to improve agent selection, execution stability, and latency."
   keywords: AI agent systems, question structuring, execution planning, agent selection, task decomposition, tool-augmented reasoning, industrial AI
 
 - title: "Plan-Then-Write: Question-Guided Table-to-Report Generation with Large Language Models"
+  domain: manufacturing
+  featured: false
   description: "This paper explores question-guided table-to-report generation with large language models. It proposes a plan-then-write framework that first identifies the user’s analytical intent, relevant table evidence, and report structure before generating faithful and informative reports."
   keywords: table-to-report generation, large language models, question-guided generation, evidence planning, numerical accuracy, self-verification
 
 - title: "Not All Relevant Sentences Are Evidence: Direct Evidence Sentence Selection for Faithful RAG"
+  domain: manufacturing
+  featured: false
   description: "This paper studies the distinction between relevant sentences and direct evidence sentences in Retrieval-Augmented Generation. It proposes a sentence-level evidence selection framework to improve answer faithfulness and reduce unsupported claims in domain-specific RAG systems."
   keywords: Retrieval-Augmented Generation, faithful generation, evidence sentence selection, hallucination reduction, unsupported claim detection, claim-evidence alignment

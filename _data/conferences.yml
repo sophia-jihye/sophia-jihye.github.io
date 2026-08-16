@@ -2,48 +2,72 @@
 
 # 2024.10 @과학기술컨벤션센터 (구두발표) 2024 대한산업공학회 추계학술대회 (KIIE).
 - title: 센서 관련 지식이 강화된 언어 모델을 활용한 센서명 자동 분류 방법
+  domain: manufacturing
+  featured: true
+  summary: Classified sensor names with a manufacturing knowledge-enhanced language model.
   authors: <strong>박지혜</strong>, 최민훈, 윤동운, 유하늘, 임재용, 최인수, 김수정, 김재혁, 정지수, 조성민, 금의석
   host: Fall Conference of Korean Institute of Industrial Engineers (KIIE), Seoul, Korea, 2024.
 
 # 2024.05 @여수 (구두발표) 2024 대한산업공학회 춘계학술대회 (KIIE).
 - title: Machine Learning 기반 반도체 공정/설비 불량 원인 분석 방법론 [<a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11800825" target="_blank">View</a>]
+  domain: manufacturing
+  featured: true
+  summary: Studied machine-learning methods for semiconductor root-cause analysis.
   authors: 유하늘, 박현섭, 임재용, 김수정, 윤동운, <strong>박지혜</strong>, 조성민, 금의석
   host: Spring Conference of Korean Institute of Industrial Engineers (KIIE), Yeosu, Korea, 2024.
 
 # 2023.11.03 @UNIST (포스터발표) 2023 대한산업공학회 추계학술대회 (KIIE).
 - title: PacMAP을 이용한 반도체 제조 공정 데이터에서의 이상 탐지 [<a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11609850" target="_blank">View</a>]
+  domain: manufacturing
+  featured: false
   authors: 유용재, 최진우, <strong>박지혜</strong>, 조성준*, 유하늘, 박광균, 임재용, 박현섭, 윤동운, 김수정, 조성민, 금의석
   host: Fall Conference of Korean Institute of Industrial Engineers (KIIE), UNIST, Korea, 2023.
 
 
 # 2023.06.24 @강릉원주대학교 (SAS논문경진대회)
 - title: Post-training Approach Using Form 10-K Filings to Inject Financial Domain-specific Factual Knowledge into Pretrained Language Models for Data-driven Financial Spam Filtering
+  domain: finance
+  featured: true
+  summary: Injected company facts from Form 10-K filings into language models.
   authors: <strong>박지혜</strong>, 조성준*
   host: Summer Conference of Korea Data Mining Society (KDMS), Gangneung, Korea, 2023.
 
 # 2023.06.01 @제주 신화월드 (구두 발표)
 - title: 반도체 제조 도메인 특화 지식 그래프 구축을 위한 엔티티 추출 방법 연구 [<a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11475405" target="_blank">View</a>]
+  domain: manufacturing
+  featured: true
+  summary: Extracted entities for a semiconductor domain knowledge graph.
   authors: <strong>박지혜</strong>, 김현종, 박소형, 조성준*, 전성환
   host: Spring Conference of Korean Institute of Industrial Engineers (KIIE), Jeju, Korea, 2023.
 
 - title: Twitter Embedding for Covariance Matrix Estimation & Portfolio Optimization
+  domain: finance
+  featured: false
   authors: 안재관, <strong>박지혜</strong>, 유용재, 조성준*, 김규진
   host: Summer Conference of Korea Data Mining Society (KDMS), Busan, Korea, 2022.
 
 # 2022.06.02 @라마다 제주 (포스터 발표)
 - title: UMAP과 HDBSCAN 군집화 기반의 반도체 제조 공정 데이터 대상 레이블 전파 방법 [<a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11084597" target="_blank">View</a>]
+  domain: manufacturing
+  featured: false
   authors: <strong>박지혜</strong>, 최진우, 유용재, 조성준*, 정수호, 인창현, 박현섭, 조기윤, 윤동운, 김상혁, 조윤혁, 이은영, 이승호, 금의석
   host: Spring Conference of Korean Institute of Industrial Engineers (KIIE), Jeju, Korea, 2022.
 
 # 2021. @제주 국제컨벤션센터
 - title: Automatic Keyword Extraction and NER-Normalization Based Knowledge Network Construction for Patent Summarization [<a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10576964" target="_blank">View</a>]
+  domain: manufacturing
+  featured: false
   authors: Hye Jin Lee, Sung Whan Jeon, <strong>Jihye Park</strong>, Sungzoon Cho*
   host: Spring Conference of Korean Institute of Industrial Engineers (KIIE), Jeju, Korea, 2021.
 
 - title: A frequency- and ranking-based approach for new event detection using non-contiguous bigrams from text data of the central bankers’ speeches
+  domain: finance
+  featured: false
   authors: <strong>Jihye Park</strong>, Hye Jin Lee, Sungzoon Cho*
   host: Fall Conference of Korea Data Mining Society (KDMS), Seoul, Korea, 2019.
   
 - title: InfoAnoGAN&colon; An Interpretable Anomaly Detection Method Using InfoGAN based on Unsupervised Learning
+  domain: manufacturing
+  featured: false
   authors: <strong>Jihye Park</strong>, Sungzoon Cho*
   host: Spring Conference of Korea Data Mining Society (KDMS), Seoul, Korea, 2019.

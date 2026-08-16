@@ -1,238 +1,673 @@
 // Resume styles
 // ---------------------------------------/
 
-// util
+$page-bg: #f4f3ee;
+$surface: #ffffff;
+$ink: #17211e;
+$muted: #5e6965;
+$line: #d8ddd9;
+$accent: #176b5b;
+$accent-soft: #dfece7;
+$finance: #405f8f;
+$marketing: #a65f35;
 
-.underline {
-  text-decoration : underline;
+html {
+  scroll-behavior: smooth;
+  background: $page-bg;
 }
 
-.section-header {
-  @include section_border;
-  margin-bottom: 1.5rem;
+body {
+  @include sans;
+  background: $page-bg;
+  color: $ink;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: rgba($accent, .45);
+  text-underline-offset: 3px;
+
+  &:hover { color: $accent; }
+
+  &:focus-visible {
+    outline: 3px solid rgba($accent, .3);
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+}
+
+.site-shell {
+  width: calc(100% - 40px);
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0 0 .8rem;
+  color: $accent;
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.section-intro {
+  max-width: 720px;
+  margin-bottom: 2.25rem;
 
   h2 {
-    @include sans;
-    font-weight: 900;
-    font-size: 1.75rem;
-    letter-spacing: -.05rem;
     margin: 0;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1.1;
+    letter-spacing: -.045em;
+  }
+
+  > p:not(.eyebrow) { color: $muted; }
+
+  .section-lead {
+    margin: 1.1rem 0 0;
+    color: $ink;
+    font-size: 1.15rem;
+    font-weight: 600;
   }
 }
 
-// page header styles
+// Myself
 
-.page-header { padding: 1.5rem 0;
-
-  .avatar {
-    width: 95px;
-    max-width: 100%;
-    overflow: hidden;
-    @include border-radius(100px);
-    margin: 0 auto;
-    display: block;
-  }
-
-  .header-name {
-    @include sans;
-    font-size: 3rem;
-    font-weight: 900;
-    text-align: center;
-    letter-spacing: -.15rem;
-    line-height: 1;
-    margin: 1rem 0 0;
-  }
-
-  .header-contact-info {
-    @include sans;
-    text-align: center;
-  }
-  .header-contact-info p a {
-    color: inherit;
-  }
-
-  .title-bar {
-    @include section_border;
-    margin-top: 2rem;
-    padding: .4rem 0;
-    @include clearfix;
-
-    .header-title {
-      @include sans;
-      font-weight: 300;
-      font-size: 1.75rem;
-      line-height: 2rem;
-      letter-spacing: -.05rem;
-      text-align: center;
-      margin: 0 0 .5rem;
-
-      @include media_larger_than_mobile {
-        float: left;
-        margin: 0;
-      }
-    }
-  }
-
-  .executive-summary {
-    @include media_larger_than_mobile { font-size: 1.125rem; }
-  }
+.myself {
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0 5rem;
 }
 
-.icon-links {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: relative;
-  top: 4px;
-  text-align: center;
-  border-top: 2px solid #c7c7c7;
-  padding-top: .4rem;
-
-  @include media_larger_than_mobile {
-    float: right;
-    border-top: none;
-    padding-top: 0;
-  }
-
-  .icon-link-item {
-    display: inline-block;
-    margin-left: 5px;
-  }
-
-  .icon-link { display: inline-block;
-
-    &:hover .icon path {
-      fill: #333;
-      @include transition(all .2s ease);
-    }
-  }
-
-  .icon {
-    height: 28px;
-  }
+.myself-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.contact-button {
-  @include border-radius(3px);
-  background-color: #efefef;
+.myself-mark {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $ink;
+  border-radius: 50%;
+  font-size: .85rem;
+  font-weight: 800;
   text-decoration: none;
-  text-align: center;
-  display: block;
-  margin: 1.5rem auto;
-  width: 220px;
-  font-size: 1.375rem;
-  @include sans_light;
-  color: #333;
-  line-height: 55px;
-  @include transition(all .2s ease);
+}
+
+.myself-links {
+  display: flex;
+  gap: 1.4rem;
+
+  a {
+    font-size: .85rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+
+.myself-content {
+  max-width: 900px;
+  margin: auto 0;
+  padding: 6rem 0 2rem;
+
+  h1 {
+    margin: 0;
+    font-size: clamp(3.5rem, 10vw, 7rem);
+    line-height: .95;
+    letter-spacing: -.075em;
+  }
+}
+
+.myself-role {
+  margin: 1.35rem 0 3rem;
+  color: $muted;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.myself-headline {
+  max-width: 830px;
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 750;
+  letter-spacing: -.055em;
+  line-height: 1.05;
+}
+
+.myself-summary,
+.myself-focus {
+  max-width: 690px;
+  margin: 1.4rem 0 0;
+  color: $muted;
+  font-size: 1.08rem;
+}
+
+.myself-focus {
+  color: $ink;
+  font-weight: 700;
+}
+
+.myself-actions {
+  display: flex;
+  gap: .75rem;
+  margin-top: 2.25rem;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.2rem;
+  border: 1px solid $ink;
+  border-radius: 999px;
+  font-size: .85rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform .2s ease, background .2s ease, color .2s ease;
+
+  &:hover { transform: translateY(-2px); }
+}
+
+.button-primary {
+  background: $ink;
+  color: #fff;
 
   &:hover {
-    background-color: #333;
+    background: $accent;
     color: #fff;
   }
-
-  &.not-looking { width: 400px; }
 }
 
-// resume content styles
+.button-secondary:hover { background: $surface; }
 
-.content-section {
-  margin: 0 0 3rem;
+// Main sections
 
-  .resume-item { margin-bottom: 2rem; }
-
-  .resume-item-title {
-    @include sans_bold;
-    margin: 0 0 .75rem;
-    font-size: 1.5rem;
-    letter-spacing: -.05rem;
-    line-height: 1;
-  }
-
-  .resume-item-details {
-    font-size: 1.125rem;
-    margin: 0 0 .75rem;
-    line-height: 1;
-
-    &.award-title {
-      font-size: 1rem;
-    }
-  }
-
-  .resume-item-title,
-  .resume-item-details,
-  .resume-item-copy,
-  .resume-item-list {
-    a {
-      color: #333;
-      text-decoration: none;
-      border-bottom: 1px solid;
-
-      &:hover {
-        border-bottom: none;
-        color: #9c9c9c;
-      }
-    }
-  }
-
-  .resume-item-copy { margin: .75rem 0 0; }
+.current-work,
+.domains,
+.experience,
+.full-cv-section {
+  padding: 6.5rem 0;
+  border-top: 1px solid $line;
 }
 
-// footer styles
+.current-work {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 130px;
+    height: 4px;
+    background: $accent;
+    content: "";
+  }
+}
+
+.work-flow {
+  display: grid;
+  margin: 3rem 0;
+  padding: 0;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  border: 1px solid $line;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.work-stage {
+  min-height: 220px;
+  padding: 1.5rem;
+  background: rgba($surface, .72);
+  border-right: 1px solid $line;
+
+  &:last-child { border-right: 0; }
+
+  .stage-number {
+    color: $accent;
+    font-size: .7rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+  }
+
+  h3 {
+    margin: 3rem 0 .65rem;
+    font-size: 1.15rem;
+  }
+
+  p {
+    margin: 0;
+    color: $muted;
+    font-size: .92rem;
+  }
+}
+
+.role-note {
+  display: grid;
+  padding: 1.75rem;
+  background: $ink;
+  color: #fff;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  border-radius: 18px;
+
+  p { margin: 0; }
+
+  .role-label {
+    margin-bottom: .45rem;
+    color: #9fc8bd;
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+}
+
+// Domains
+
+.domain-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.domain-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 1.5rem;
+  background: $surface;
+  border: 1px solid $line;
+  border-top: 5px solid $accent;
+  border-radius: 12px;
+
+  &.domain-finance { border-top-color: $finance; }
+  &.domain-marketing { border-top-color: $marketing; }
+}
+
+.domain-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
+  h3 {
+    display: inline;
+    margin: 0;
+    font-size: 1.4rem;
+    letter-spacing: -.03em;
+  }
+}
+
+.domain-index {
+  margin: .2rem 0 0;
+  color: $muted;
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.domain-status {
+  display: inline-block;
+  margin-left: .35rem;
+  padding: .15rem .45rem;
+  background: $accent-soft;
+  color: $accent;
+  border-radius: 999px;
+  font-size: .62rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.domain-summary {
+  min-height: 78px;
+  margin: 1.1rem 0 1.5rem;
+  color: $muted;
+  font-size: .92rem;
+}
+
+.domain-work { border-top: 1px solid $line; }
+
+.featured-item {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid $line;
+
+  &:last-child { border-bottom: 0; }
+
+  .record-type {
+    color: $muted;
+    font-size: .65rem;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    margin: .35rem 0;
+    font-size: .95rem;
+    line-height: 1.4;
+  }
+
+  p {
+    margin: 0;
+    color: $muted;
+    font-size: .82rem;
+    line-height: 1.55;
+  }
+}
+
+// Experience
+
+.experience-list { border-top: 1px solid $line; }
+
+.experience-item {
+  display: grid;
+  padding: 2rem 0;
+  grid-template-columns: minmax(220px, .75fr) 1.5fr;
+  gap: 2rem;
+  border-bottom: 1px solid $line;
+}
+
+.experience-current {
+  padding-left: 1.25rem;
+  border-left: 4px solid $accent;
+}
+
+.experience-meta p { margin: 0; }
+
+.experience-period {
+  color: $muted;
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+.experience-company {
+  margin-top: .35rem !important;
+  font-weight: 800;
+}
+
+.experience-copy {
+  h3 {
+    margin: 0 0 .6rem;
+    font-size: 1.35rem;
+  }
+
+  > p {
+    margin: 0;
+    color: $muted;
+  }
+
+  ul {
+    margin: 1rem 0 0;
+    padding-left: 1.2rem;
+  }
+
+  li { margin: .35rem 0; }
+}
+
+// Full CV
+
+.full-cv-details {
+  > summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background: $surface;
+    border: 1px solid $line;
+    border-radius: 16px;
+    cursor: pointer;
+    list-style: none;
+
+    &::-webkit-details-marker { display: none; }
+
+    strong {
+      display: block;
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      letter-spacing: -.035em;
+    }
+
+    .eyebrow { margin-bottom: .35rem; }
+  }
+
+  &[open] > summary {
+    border-radius: 16px 16px 0 0;
+
+    .summary-action:after { content: " less"; }
+  }
+}
+
+.summary-action {
+  font-size: .78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.full-cv-content {
+  padding: 1rem 2rem 3rem;
+  background: $surface;
+  border: 1px solid $line;
+  border-top: 0;
+  border-radius: 0 0 16px 16px;
+}
+
+.archive-section {
+  padding: 3rem 0 1rem;
+  border-bottom: 1px solid $line;
+
+  &:last-child { border-bottom: 0; }
+}
+
+.archive-heading {
+  margin-bottom: 2rem;
+
+  h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: -.035em;
+  }
+
+  p {
+    margin: .35rem 0 0;
+    color: $muted;
+    font-size: .78rem;
+  }
+}
+
+.archive-item {
+  max-width: 850px;
+  margin-bottom: 2rem;
+
+  h3 {
+    margin: .45rem 0;
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  p,
+  li {
+    font-size: .9rem;
+    line-height: 1.65;
+  }
+
+  p { margin: .45rem 0; }
+  ul { margin: .65rem 0 0; }
+}
+
+.archive-period,
+.archive-subtitle {
+  color: $muted;
+  font-size: .78rem !important;
+  font-weight: 700;
+}
+
+.archive-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+
+.domain-tag {
+  display: inline-flex;
+  padding: .15rem .5rem;
+  background: $accent-soft;
+  color: $accent;
+  border-radius: 999px;
+  font-size: .62rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+
+  &.domain-finance {
+    background: rgba($finance, .12);
+    color: $finance;
+  }
+
+  &.domain-marketing {
+    background: rgba($marketing, .12);
+    color: $marketing;
+  }
+}
 
 .page-footer {
-  border-top: 4px solid #c7c7c7;
-  padding-top: 1.5rem;
-  text-align: center;
-  margin-bottom: 3rem;
+  padding: 3.5rem 0 4rem;
+  border-top: 1px solid $line;
+  color: $muted;
+  text-align: left;
 
-  .footer-line {
-    margin: 0;
-    font-size: .875rem;
-    color: #999;
+  p { margin: .2rem 0; }
 
-    > a {
-      font-weight: 700;
-      color: #333;
-    }
+  p:first-child {
+    color: $ink;
+    font-weight: 800;
   }
 }
 
-.print-only { display: none !important }
+.print-only { display: none !important; }
+
+@media (max-width: 900px) {
+  .myself { min-height: auto; }
+  .myself-content { padding-top: 8rem; }
+
+  .work-flow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work-stage {
+    border-bottom: 1px solid $line;
+
+    &:nth-child(2) { border-right: 0; }
+    &:nth-child(3),
+    &:nth-child(4) { border-bottom: 0; }
+  }
+
+  .domain-grid { grid-template-columns: 1fr; }
+  .domain-summary { min-height: 0; }
+
+  .domain-work {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .featured-item {
+    border-bottom: 0;
+    border-right: 1px solid $line;
+    padding-right: 1rem;
+
+    &:last-child { border-right: 0; }
+  }
+}
+
+@media (max-width: 640px) {
+  .site-shell { width: calc(100% - 28px); }
+
+  .myself {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+  }
+
+  .myself-links { gap: .85rem; }
+  .myself-content { padding-top: 6rem; }
+  .myself-role { margin-bottom: 2rem; }
+  .myself-actions { align-items: stretch; flex-direction: column; }
+
+  .current-work,
+  .domains,
+  .experience,
+  .full-cv-section { padding: 4.5rem 0; }
+
+  .work-flow { grid-template-columns: 1fr; }
+
+  .work-stage {
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid $line !important;
+
+    &:last-child { border-bottom: 0 !important; }
+    h3 { margin-top: 1.75rem; }
+  }
+
+  .role-note,
+  .experience-item { grid-template-columns: 1fr; }
+
+  .domain-work { grid-template-columns: 1fr; }
+
+  .featured-item {
+    border-right: 0;
+    border-bottom: 1px solid $line;
+    padding-right: 0;
+  }
+
+  .experience-current { padding-left: .9rem; }
+
+  .full-cv-details > summary,
+  .full-cv-content { padding-left: 1.1rem; padding-right: 1.1rem; }
+}
 
 @media print {
-  .no-print { display: none !important }
-  .print-only { display: block !important }
-  body { font-size: 12px; line-height: 1rem; }
-  .page-header { padding: 1rem 0 .2rem;
-    .header-name {
-      @include sans_bold;
-      font-size: 2rem;
-      margin: 0 0 .2rem;
-    }
-  }
-  .section-header {
-    @include section_border_thin;
-    margin-bottom: 1rem;
-    h2 { font-size: 1.2rem; line-height: 1.5rem; }
-  }
-  .content-section {
-    margin: 0 0 1rem;
-    .resume-item { margin-bottom: 1rem; }
-    .resume-item-title {
-      font-size: 16px;
-      line-height: .7em;
-    }
+  html,
+  body { background: #fff; }
 
-    .resume-item-details {
-      font-size: 12px;
-      margin: 0 0 .75rem;
-      line-height: .7em;
-      font-style:italic;
+  body { font-size: 11px; }
+  .site-shell { width: 100%; max-width: none; }
+  .no-print { display: none !important; }
+  .print-only { display: block !important; }
 
-      &.award-title {
-        font-size: 11px;
-      }
-    }
+  .myself {
+    min-height: auto;
+    padding: 0 0 1.5rem;
   }
+
+  .myself-content { padding: 0; }
+  .myself-content h1 { font-size: 2.5rem; }
+  .myself-headline { font-size: 1.5rem; }
+  .myself-role { margin: .5rem 0 1rem; }
+
+  .current-work,
+  .domains,
+  .experience,
+  .full-cv-section { padding: 1.5rem 0; }
+
+  .work-flow,
+  .domain-grid { break-inside: avoid; }
+  .work-stage { min-height: auto; }
+  .role-note { background: #fff; color: $ink; border: 1px solid $line; }
+  .role-note .role-label { color: $accent; }
+
+  .full-cv-details > summary { display: none; }
+  .full-cv-details:not([open]) > .full-cv-content { display: block !important; }
+  .full-cv-content { padding: 0; border: 0; }
+  .archive-section { break-before: auto; }
+  .archive-item { break-inside: avoid; }
+  .page-footer { margin-top: 1rem; padding: 1rem 0 0; }
 }

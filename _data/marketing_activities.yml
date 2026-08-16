@@ -1,0 +1,17 @@
+- title: 가짜뉴스 문제 해결을 위한 범국민 SNS 캠페인 제안
+  domain: marketing
+  featured: true
+  authors: 윤서윤 (중앙대학교 광고홍보학과)†, 조영아 (중앙대학교 도시계획부동산학과)†, 최영현 (중앙대학교 프랑스어문학과)†, 박재홍 (중앙대학교 역사학과)†, <strong>박지혜*</strong>
+  description: 2023 KOSAC "시민 문화 정착 프로젝트 기획" 공모전 출품
+  view_url: https://kosac.ad.co.kr/pages/5
+
+- title: "Music-Circles: Can Music Be Represented With Numbers?"
+  domain: marketing
+  featured: true
+  authors: Seokgi Kim†, <strong>Jihye Park†</strong>, Kihong Seong†, Namwoo Cho†, Junho Min†, Hwajung Hong*
+  description: arXiv preprint arXiv:2102.13350, 2021.
+  media_url: https://techxplore.com/news/2021-03-music-circles-interactive-visualization-tool.html
+  view_url: https://arxiv.org/abs/2102.13350
+  demo_url: https://sophia-jihye.github.io/files/MusicVis/discover.html
+  video_url: https://youtu.be/OrB0qQz_A2c
+  code_url: https://github.com/chonamwoo/snuDxd

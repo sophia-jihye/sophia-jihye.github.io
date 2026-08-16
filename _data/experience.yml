@@ -1,0 +1,19 @@
+- company: Samsung Electronics
+  role: Software Engineer
+  period: September 2023 &ndash; Present
+  summary: Building industrial AI systems for semiconductor manufacturing.
+  bullets:
+    - Building a multi-agent AI Copilot for equipment productivity-loss analysis.
+    - Developing a context-aware router that selects and connects specialist agents.
+    - Connecting manufacturing data and operational knowledge to engineering decisions.
+
+- company: Bankware Global
+  role: Backend Developer
+  period: July 2016 &ndash; June 2018
+  summary: Built enterprise backend systems using Java, Linux, and Oracle.
+
+- company: Hankook Research
+  role: Market Researcher
+  period: January 2016 &ndash; May 2016
+  summary: Analyzed customer data and conducted field research.
+

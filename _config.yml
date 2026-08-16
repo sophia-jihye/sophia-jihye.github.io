@@ -1,6 +1,6 @@
 # Site settings
-title: "Jihye Park"
-description: "Sophia means 지혜 in Greek."
+title: "Jihye Park — Industrial AI Systems Researcher & Engineer"
+description: "Industrial AI systems across manufacturing, finance, and marketing."
 
 # Build settings
 markdown: kramdown
@@ -11,7 +11,7 @@ sass:
 # Resume settings
 resume_avatar:                  "false"
 resume_name:                    "Jihye Park"
-resume_title:                   "an industrial AI researcher working at the intersection of manufacturing data, AI systems, and decision-making"
+resume_title:                   "Industrial AI Systems Researcher & Engineer"
 
 # used for the contact button in _layouts/resume.html
 resume_contact_email:           "sophia.jihyeparkk@gmail.com"
