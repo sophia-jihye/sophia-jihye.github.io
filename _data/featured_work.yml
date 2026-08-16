@@ -49,3 +49,20 @@
   title: Public Campaign Against Fake News
   summary: Guided a data-informed communication campaign proposal.
   url: https://kosac.ad.co.kr/pages/5
+
+- domain: data-analysis
+  type: Teaching
+  title: Practical Data Analysis
+  summary: Taught applied data analysis across arts, leisure, and industry.
+  url: https://www.gokams.or.kr/main/main.aspx
+
+- domain: data-analysis
+  type: Teaching
+  title: Python & Machine Learning
+  summary: Taught programming and machine learning to international students.
+  url: https://lei.snu.ac.kr/mobile/kr/klec/koreanTrust/koreanTrust.jsp
+
+- domain: data-analysis
+  type: Teaching
+  title: Big Data AI Camp
+  summary: Supported data-mining education for high-school students.

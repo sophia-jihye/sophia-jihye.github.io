@@ -10,6 +10,7 @@ $accent: #176b5b;
 $accent-soft: #dfece7;
 $finance: #405f8f;
 $marketing: #a65f35;
+$data-analysis: #6b558f;
 
 html {
   scroll-behavior: smooth;
@@ -276,7 +277,7 @@ a {
 
 .domain-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
@@ -292,6 +293,7 @@ a {
 
   &.domain-finance { border-top-color: $finance; }
   &.domain-marketing { border-top-color: $marketing; }
+  &.domain-data-analysis { border-top-color: $data-analysis; }
 }
 
 .domain-heading {
@@ -535,6 +537,11 @@ a {
   &.domain-marketing {
     background: rgba($marketing, .12);
     color: $marketing;
+  }
+
+  &.domain-data-analysis {
+    background: rgba($data-analysis, .12);
+    color: $data-analysis;
   }
 }
 

@@ -1,0 +1,3 @@
+{% assign domain_label = include.domain | capitalize %}
+{% if include.domain == 'data-analysis' %}{% assign domain_label = 'Data Analysis' %}{% endif %}
+<span class="domain-tag domain-{{ include.domain }}">{{ domain_label }}</span>

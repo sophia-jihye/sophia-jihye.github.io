@@ -12,3 +12,8 @@
   name: Marketing
   label: Research foundation
   summary: Understanding markets, audiences, and communication through data.
+
+- id: data-analysis
+  name: Data Analysis
+  label: Teaching & practice
+  summary: Teaching and applying practical data analysis across organizations and audiences.
