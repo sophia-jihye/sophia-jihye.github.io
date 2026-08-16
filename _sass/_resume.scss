@@ -351,6 +351,13 @@ a {
   text-transform: uppercase;
 }
 
+.summary-action-close { display: none; }
+
+.full-cv-details[open] > summary {
+  .summary-action-open { display: none; }
+  .summary-action-close { display: inline; }
+}
+
 .full-cv-content { padding-top: .5rem; }
 
 .about-content {
