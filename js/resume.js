@@ -1,7 +1,20 @@
 (function () {
   "use strict";
 
+  var analyticsTriggers = document.querySelectorAll("[data-analytics-event]");
   var triggers = document.querySelectorAll("[data-open-details]");
+
+  function trackEvent(eventName) {
+    if (eventName && typeof window.gtag === "function") {
+      window.gtag("event", eventName);
+    }
+  }
+
+  Array.prototype.forEach.call(analyticsTriggers, function (trigger) {
+    trigger.addEventListener("click", function () {
+      trackEvent(trigger.getAttribute("data-analytics-event"));
+    });
+  });
 
   Array.prototype.forEach.call(triggers, function (trigger) {
     var targetId = trigger.getAttribute("data-open-details");
