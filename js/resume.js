@@ -1,6 +1,7 @@
 (function () {
   "use strict";
 
+  var analyticsOpenTargets = document.querySelectorAll("[data-analytics-open-event]");
   var analyticsTriggers = document.querySelectorAll("[data-analytics-event]");
   var triggers = document.querySelectorAll("[data-open-details]");
 
@@ -13,6 +14,14 @@
   Array.prototype.forEach.call(analyticsTriggers, function (trigger) {
     trigger.addEventListener("click", function () {
       trackEvent(trigger.getAttribute("data-analytics-event"));
+    });
+  });
+
+  Array.prototype.forEach.call(analyticsOpenTargets, function (target) {
+    target.addEventListener("toggle", function () {
+      if (target.open) {
+        trackEvent(target.getAttribute("data-analytics-open-event"));
+      }
     });
   });
 
