@@ -1,12 +1,19 @@
 - company: Samsung Electronics DS Division
   role: Staff Engineer
   period: September 2023 &ndash; Present
-  summary: Building industrial AI systems for semiconductor manufacturing.
-  bullets:
-    - Building a multi-agent AI system for equipment productivity-loss analysis.
-    - Developing a context-aware router that selects and connects specialist agents.
-    - Developing predictive and explainable AI for root-cause analysis, anomaly detection, and terminology normalization.
-    - Building production AI pipelines with Airflow, Kubernetes, and Docker.
+  summary: Developing AI systems for semiconductor manufacturing.
+  work_periods:
+    - period: 2025&ndash;Present
+      title: Multi-Agent AI Systems
+      bullets:
+        - Developed specialized AI agents to analyze equipment productivity data.
+        - Built context-aware orchestration, workflows, and tool integrations for complex engineering requests.
+        - Built frameworks to evaluate multi-agent system quality and performance.
+    - period: 2023&ndash;2024
+      title: Manufacturing Data Intelligence
+      bullets:
+        - Developed an AI algorithm to identify the root causes of wafer defects.
+        - Normalized domain-specific sensor names across equipment from multiple manufacturers.
 
 - company: Bankware Global
   role: Backend Developer

@@ -1,8 +1,8 @@
-label: Current Work
+label: Current Work · 2025–Present
 title: Multi-Agent AI for Equipment Productivity
 problem: Semiconductor equipment can keep running while producing fewer wafers per hour than expected.
 system: The system connects equipment data, manuals, maintenance records, past actions, and specialist AI agents.
-role: I develop context-aware routing that interprets each request and connects the right specialist agents.
+role: I build and evaluate multi-agent AI systems that connect manufacturing data, domain knowledge, and tools.
 stages:
   - title: Detect Loss
     description: Find where equipment productivity is falling.

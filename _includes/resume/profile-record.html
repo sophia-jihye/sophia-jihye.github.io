@@ -12,6 +12,18 @@
         <h3>{{ item.role }}, {{ item.company }}</h3>
         <p class="profile-period">{{ item.period }}</p>
         <p>{{ item.summary }}</p>
+        {% if item.work_periods %}
+        <div class="profile-work-periods">
+          {% for work_period in item.work_periods %}
+          <section class="profile-work-period">
+            <h4><span>{{ work_period.period }}</span>{{ work_period.title }}</h4>
+            <ul>
+              {% for bullet in work_period.bullets %}<li>{{ bullet }}</li>{% endfor %}
+            </ul>
+          </section>
+          {% endfor %}
+        </div>
+        {% endif %}
         {% if item.bullets %}
         <ul>
           {% for bullet in item.bullets %}<li>{{ bullet }}</li>{% endfor %}
