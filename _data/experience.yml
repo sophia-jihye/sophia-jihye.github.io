@@ -3,7 +3,7 @@
   period: September 2023 &ndash; Present
   summary: Building industrial AI systems for semiconductor manufacturing.
   bullets:
-    - Building a multi-agent AI Copilot for equipment productivity-loss analysis.
+    - Building a multi-agent AI system for equipment productivity-loss analysis.
     - Developing a context-aware router that selects and connects specialist agents.
     - Developing predictive and explainable AI for root-cause analysis, anomaly detection, and terminology normalization.
     - Building production AI pipelines with Airflow, Kubernetes, and Docker.

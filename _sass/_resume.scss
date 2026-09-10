@@ -233,23 +233,12 @@ a {
   }
 }
 
-.role-note {
-  display: grid;
-  padding: 1.5rem 0 1.5rem 1.4rem;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+.role-focus {
+  margin: 0;
+  padding: 1.1rem 0 1.1rem 1.4rem;
   border-left: 2px solid $accent;
-
-  p { margin: 0; }
-
-  .role-label {
-    margin-bottom: .35rem;
-    color: $muted;
-    font-size: .68rem;
-    font-weight: 700;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-  }
+  font-size: .92rem;
+  line-height: 1.6;
 }
 
 // Work experience and education
@@ -555,8 +544,7 @@ a {
   .section-intro-compact h2 { font-size: 1.25rem; }
   .full-cv-details { padding: 0 .9rem; }
 
-  .work-flow,
-  .role-note { grid-template-columns: 1fr; }
+  .work-flow { grid-template-columns: 1fr; }
 
   .work-stage,
   .work-stage:not(:first-child) {
@@ -566,7 +554,6 @@ a {
     h3 { margin-top: 1rem; }
   }
 
-  .role-note { gap: 1.2rem; }
 }
 
 @media print {

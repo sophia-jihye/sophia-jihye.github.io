@@ -7,7 +7,7 @@
     <p>{{ work.system }}</p>
   </div>
 
-  <ol class="work-flow" aria-label="Copilot workflow">
+  <ol class="work-flow" aria-label="AI system workflow">
     {% for stage in work.stages %}
     <li class="work-stage">
       <span class="stage-number">0{{ forloop.index }}</span>
@@ -17,15 +17,5 @@
     {% endfor %}
   </ol>
 
-  <div class="role-note">
-    <div>
-      <p class="role-label">My role</p>
-      <p>{{ work.role }}</p>
-    </div>
-    <div>
-      <p class="role-label">Direction</p>
-      <p>{{ work.direction }}</p>
-    </div>
-  </div>
+  <p class="role-focus">{{ work.role }}</p>
 </section>
-
